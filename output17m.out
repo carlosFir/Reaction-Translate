@@ -1,0 +1,1543 @@
+nohup: ignoring input
+Preprocessing....
+Loading data...
+Model parameters:  17583594
+Training....
+[model]
+num_layers = 4
+num_heads = 8
+d_model = 512
+dff = 512
+pe_input = 120
+pe_target = 120
+rate = 0.1
+device = cuda:2
+
+[data]
+max_length = 100
+batch_size = 512
+on_full = True
+full_data_path = /home/Zhouyu/MODEL/translate/ustpo_list.txt
+250k_data_path = /home/Zhouyu/MODEL/translate/ustpo250k_list.txt
+vocab_path = /home/Zhouyu/MODEL/translate/vocab.txt
+
+[train]
+epochs = 20
+save_dir = /home/Zhouyu/MODEL/translate/save
+save_name = /test17m.tar
+print_trainstep_every = 100
+teacher_forcing_ratio = 0.2
+
+[optimizer]
+lr = 0.0001
+beta1 = 0.9
+beta2 = 0.98
+eps = 1e-9
+
+[generate]
+on = False
+ckpt = /home/Zhouyu/MODEL/translate/save/test2passbig240m.tar
+==================== 2024-02-29 20:39:11 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 1 | Step 0 | Loss 6.4985 | Accuracy 0.0005
+Epoch 1 | Step 100 | Loss 2.1358 | Accuracy 0.4049
+Epoch 1 | Step 200 | Loss 1.9010 | Accuracy 0.4246
+Epoch 1 | Step 300 | Loss 1.7994 | Accuracy 0.4329
+Epoch 1 | Step 400 | Loss 1.7452 | Accuracy 0.4372
+Epoch 1 | Step 500 | Loss 1.7110 | Accuracy 0.4398
+Epoch 1 | Step 600 | Loss 1.6880 | Accuracy 0.4418
+Epoch 1 | Step 700 | Loss 1.6713 | Accuracy 0.4432
+Epoch 1 | Step 800 | Loss 1.6602 | Accuracy 0.4441
+Epoch 1 | Step 900 | Loss 1.6520 | Accuracy 0.4446
+Epoch 1 | Step 1000 | Loss 1.6452 | Accuracy 0.4452
+Epoch 1 | Step 1100 | Loss 1.6403 | Accuracy 0.4455
+Epoch 1 | Step 1200 | Loss 1.6366 | Accuracy 0.4457
+Epoch 1 | Step 1300 | Loss 1.6342 | Accuracy 0.4456
+Epoch 1 | Step 1400 | Loss 1.6325 | Accuracy 0.4456
+Epoch 1 | Step 1500 | Loss 1.6313 | Accuracy 0.4455
+Epoch 1 | Step 1600 | Loss 1.6304 | Accuracy 0.4453
+Epoch 1 | Step 1700 | Loss 1.6300 | Accuracy 0.4451
+Epoch 1 | Step 1800 | Loss 1.6296 | Accuracy 0.4449
+Epoch 1 | Step 1900 | Loss 1.6302 | Accuracy 0.4445
+Epoch 1 | Step 2000 | Loss 1.6306 | Accuracy 0.4442
+Epoch 1 | Step 2100 | Loss 1.6312 | Accuracy 0.4438
+Epoch 1 | Step 2200 | Loss 1.6316 | Accuracy 0.4435
+Epoch 1 | Step 2300 | Loss 1.6324 | Accuracy 0.4431
+Epoch 1 | Step 2400 | Loss 1.6330 | Accuracy 0.4427
+Epoch 1 | Step 2500 | Loss 1.6336 | Accuracy 0.4423
+Epoch 1 | Step 2600 | Loss 1.6345 | Accuracy 0.4419
+Epoch 1 | Step 2700 | Loss 1.6351 | Accuracy 0.4416
+Epoch 1 | Step 2800 | Loss 1.6359 | Accuracy 0.4411
+Epoch 1 | Step 2900 | Loss 1.6366 | Accuracy 0.4408
+Epoch 1 | Step 3000 | Loss 1.6372 | Accuracy 0.4404
+Epoch 1 | Step 3100 | Loss 1.6379 | Accuracy 0.4401
+Epoch 1 | Step 3200 | Loss 1.6385 | Accuracy 0.4397
+Epoch 1 | Step 3300 | Loss 1.6392 | Accuracy 0.4393
+Epoch 1 | Step 3400 | Loss 1.6399 | Accuracy 0.4390
+Epoch 1 | Step 3500 | Loss 1.6406 | Accuracy 0.4386
+Epoch 1 | Step 3600 | Loss 1.6412 | Accuracy 0.4382
+Epoch 1 | Step 3700 | Loss 1.6418 | Accuracy 0.4379
+Epoch 1 | Step 3800 | Loss 1.6424 | Accuracy 0.4375
+Epoch 1 | Step 3900 | Loss 1.6431 | Accuracy 0.4372
+Epoch 1 | Step 4000 | Loss 1.6434 | Accuracy 0.4369
+Epoch 1 | Step 4100 | Loss 1.6438 | Accuracy 0.4366
+Epoch 1 | Step 4200 | Loss 1.6442 | Accuracy 0.4363
+Epoch 1 | Step 4300 | Loss 1.6446 | Accuracy 0.4361
+Epoch 1 | Step 4400 | Loss 1.6450 | Accuracy 0.4358
+Epoch 1 | Step 4500 | Loss 1.6454 | Accuracy 0.4355
+Epoch 1 | Step 4600 | Loss 1.6456 | Accuracy 0.4353
+Epoch 1 | Step 4700 | Loss 1.6458 | Accuracy 0.4351
+Epoch 1 | Step 4800 | Loss 1.6461 | Accuracy 0.4349
+Epoch 1 | Step 4900 | Loss 1.6464 | Accuracy 0.4347
+Epoch 1 | Step 5000 | Loss 1.6466 | Accuracy 0.4345
+Epoch 1 | Step 5100 | Loss 1.6467 | Accuracy 0.4344
+Epoch 1 | Step 5200 | Loss 1.6468 | Accuracy 0.4342
+Epoch 1 | Step 5300 | Loss 1.6468 | Accuracy 0.4341
+Epoch 1 | Step 5400 | Loss 1.6469 | Accuracy 0.4340
+Epoch 1 | Step 5500 | Loss 1.6470 | Accuracy 0.4340
+Epoch 1 | Step 5600 | Loss 1.6470 | Accuracy 0.4339
+Epoch 1 | Step 5700 | Loss 1.6469 | Accuracy 0.4339
+Epoch 1 | Step 5800 | Loss 1.6469 | Accuracy 0.4339
+Epoch 1 | Step 5900 | Loss 1.6467 | Accuracy 0.4339
+Epoch 1 | Step 6000 | Loss 1.6466 | Accuracy 0.4339
+Epoch 1 | Step 6100 | Loss 1.6465 | Accuracy 0.4339
+Epoch 1 | Step 6200 | Loss 1.6462 | Accuracy 0.4340
+Epoch 1 | Step 6300 | Loss 1.6460 | Accuracy 0.4340
+Epoch 1 | Step 6400 | Loss 1.6458 | Accuracy 0.4341
+Epoch 1 | Step 6500 | Loss 1.6455 | Accuracy 0.4342
+Epoch 1 | Step 6600 | Loss 1.6452 | Accuracy 0.4343
+Epoch 1 | Step 6700 | Loss 1.6449 | Accuracy 0.4344
+Epoch 1 | Step 6800 | Loss 1.6445 | Accuracy 0.4345
+Epoch 1 | Step 6900 | Loss 1.6442 | Accuracy 0.4347
+Epoch 1 | Step 7000 | Loss 1.6438 | Accuracy 0.4348
+Epoch 1 | Step 7100 | Loss 1.6433 | Accuracy 0.4350
+  0%|          | 0/7172 [45:07<?, ?it/s]
+EPOCH: 1, LOSS: 1.6433, ACC: 0.4352, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-02-29 21:24:18 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 2 | Step 0 | Loss 1.5974 | Accuracy 0.4248
+Epoch 2 | Step 100 | Loss 1.1615 | Accuracy 0.5786
+Epoch 2 | Step 200 | Loss 1.1355 | Accuracy 0.5872
+Epoch 2 | Step 300 | Loss 1.1302 | Accuracy 0.5899
+Epoch 2 | Step 400 | Loss 1.1299 | Accuracy 0.5909
+Epoch 2 | Step 500 | Loss 1.1295 | Accuracy 0.5920
+Epoch 2 | Step 600 | Loss 1.1323 | Accuracy 0.5920
+Epoch 2 | Step 700 | Loss 1.1345 | Accuracy 0.5918
+Epoch 2 | Step 800 | Loss 1.1382 | Accuracy 0.5912
+Epoch 2 | Step 900 | Loss 1.1441 | Accuracy 0.5898
+Epoch 2 | Step 1000 | Loss 1.1479 | Accuracy 0.5890
+Epoch 2 | Step 1100 | Loss 1.1515 | Accuracy 0.5882
+Epoch 2 | Step 1200 | Loss 1.1564 | Accuracy 0.5868
+Epoch 2 | Step 1300 | Loss 1.1615 | Accuracy 0.5855
+Epoch 2 | Step 1400 | Loss 1.1658 | Accuracy 0.5843
+Epoch 2 | Step 1500 | Loss 1.1699 | Accuracy 0.5831
+Epoch 2 | Step 1600 | Loss 1.1739 | Accuracy 0.5819
+Epoch 2 | Step 1700 | Loss 1.1777 | Accuracy 0.5808
+Epoch 2 | Step 1800 | Loss 1.1819 | Accuracy 0.5793
+Epoch 2 | Step 1900 | Loss 1.1858 | Accuracy 0.5780
+Epoch 2 | Step 2000 | Loss 1.1893 | Accuracy 0.5768
+Epoch 2 | Step 2100 | Loss 1.1933 | Accuracy 0.5753
+Epoch 2 | Step 2200 | Loss 1.1967 | Accuracy 0.5740
+Epoch 2 | Step 2300 | Loss 1.1999 | Accuracy 0.5728
+Epoch 2 | Step 2400 | Loss 1.2028 | Accuracy 0.5716
+Epoch 2 | Step 2500 | Loss 1.2059 | Accuracy 0.5703
+Epoch 2 | Step 2600 | Loss 1.2087 | Accuracy 0.5692
+Epoch 2 | Step 2700 | Loss 1.2114 | Accuracy 0.5680
+Epoch 2 | Step 2800 | Loss 1.2139 | Accuracy 0.5668
+Epoch 2 | Step 2900 | Loss 1.2162 | Accuracy 0.5657
+Epoch 2 | Step 3000 | Loss 1.2183 | Accuracy 0.5647
+Epoch 2 | Step 3100 | Loss 1.2203 | Accuracy 0.5637
+Epoch 2 | Step 3200 | Loss 1.2222 | Accuracy 0.5627
+Epoch 2 | Step 3300 | Loss 1.2238 | Accuracy 0.5618
+Epoch 2 | Step 3400 | Loss 1.2253 | Accuracy 0.5610
+Epoch 2 | Step 3500 | Loss 1.2267 | Accuracy 0.5602
+Epoch 2 | Step 3600 | Loss 1.2279 | Accuracy 0.5595
+Epoch 2 | Step 3700 | Loss 1.2289 | Accuracy 0.5588
+Epoch 2 | Step 3800 | Loss 1.2300 | Accuracy 0.5582
+Epoch 2 | Step 3900 | Loss 1.2310 | Accuracy 0.5575
+Epoch 2 | Step 4000 | Loss 1.2317 | Accuracy 0.5570
+Epoch 2 | Step 4100 | Loss 1.2324 | Accuracy 0.5564
+Epoch 2 | Step 4200 | Loss 1.2330 | Accuracy 0.5560
+Epoch 2 | Step 4300 | Loss 1.2336 | Accuracy 0.5555
+Epoch 2 | Step 4400 | Loss 1.2340 | Accuracy 0.5551
+Epoch 2 | Step 4500 | Loss 1.2341 | Accuracy 0.5548
+Epoch 2 | Step 4600 | Loss 1.2342 | Accuracy 0.5545
+Epoch 2 | Step 4700 | Loss 1.2342 | Accuracy 0.5543
+Epoch 2 | Step 4800 | Loss 1.2342 | Accuracy 0.5541
+Epoch 2 | Step 4900 | Loss 1.2339 | Accuracy 0.5540
+Epoch 2 | Step 5000 | Loss 1.2335 | Accuracy 0.5539
+Epoch 2 | Step 5100 | Loss 1.2332 | Accuracy 0.5538
+Epoch 2 | Step 5200 | Loss 1.2327 | Accuracy 0.5538
+Epoch 2 | Step 5300 | Loss 1.2321 | Accuracy 0.5538
+Epoch 2 | Step 5400 | Loss 1.2316 | Accuracy 0.5539
+Epoch 2 | Step 5500 | Loss 1.2312 | Accuracy 0.5539
+Epoch 2 | Step 5600 | Loss 1.2305 | Accuracy 0.5540
+Epoch 2 | Step 5700 | Loss 1.2299 | Accuracy 0.5542
+Epoch 2 | Step 5800 | Loss 1.2292 | Accuracy 0.5543
+Epoch 2 | Step 5900 | Loss 1.2285 | Accuracy 0.5545
+Epoch 2 | Step 6000 | Loss 1.2277 | Accuracy 0.5547
+Epoch 2 | Step 6100 | Loss 1.2271 | Accuracy 0.5549
+Epoch 2 | Step 6200 | Loss 1.2264 | Accuracy 0.5551
+Epoch 2 | Step 6300 | Loss 1.2256 | Accuracy 0.5554
+Epoch 2 | Step 6400 | Loss 1.2249 | Accuracy 0.5556
+Epoch 2 | Step 6500 | Loss 1.2243 | Accuracy 0.5559
+Epoch 2 | Step 6600 | Loss 1.2236 | Accuracy 0.5562
+Epoch 2 | Step 6700 | Loss 1.2229 | Accuracy 0.5565
+Epoch 2 | Step 6800 | Loss 1.2221 | Accuracy 0.5569
+Epoch 2 | Step 6900 | Loss 1.2215 | Accuracy 0.5573
+Epoch 2 | Step 7000 | Loss 1.2210 | Accuracy 0.5576
+Epoch 2 | Step 7100 | Loss 1.2206 | Accuracy 0.5579
+  0%|          | 0/7172 [48:55<?, ?it/s]
+EPOCH: 2, LOSS: 1.2205, ACC: 0.5582, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-02-29 22:13:14 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 3 | Step 0 | Loss 1.3725 | Accuracy 0.4798
+Epoch 3 | Step 100 | Loss 0.6092 | Accuracy 0.7866
+Epoch 3 | Step 200 | Loss 0.5740 | Accuracy 0.7982
+Epoch 3 | Step 300 | Loss 0.5635 | Accuracy 0.8020
+Epoch 3 | Step 400 | Loss 0.5629 | Accuracy 0.8024
+Epoch 3 | Step 500 | Loss 0.5634 | Accuracy 0.8023
+Epoch 3 | Step 600 | Loss 0.5653 | Accuracy 0.8019
+Epoch 3 | Step 700 | Loss 0.5677 | Accuracy 0.8011
+Epoch 3 | Step 800 | Loss 0.5734 | Accuracy 0.7992
+Epoch 3 | Step 900 | Loss 0.5797 | Accuracy 0.7971
+Epoch 3 | Step 1000 | Loss 0.5865 | Accuracy 0.7948
+Epoch 3 | Step 1100 | Loss 0.5919 | Accuracy 0.7929
+Epoch 3 | Step 1200 | Loss 0.5972 | Accuracy 0.7911
+Epoch 3 | Step 1300 | Loss 0.6033 | Accuracy 0.7889
+Epoch 3 | Step 1400 | Loss 0.6096 | Accuracy 0.7867
+Epoch 3 | Step 1500 | Loss 0.6140 | Accuracy 0.7851
+Epoch 3 | Step 1600 | Loss 0.6196 | Accuracy 0.7830
+Epoch 3 | Step 1700 | Loss 0.6249 | Accuracy 0.7811
+Epoch 3 | Step 1800 | Loss 0.6302 | Accuracy 0.7791
+Epoch 3 | Step 1900 | Loss 0.6357 | Accuracy 0.7770
+Epoch 3 | Step 2000 | Loss 0.6405 | Accuracy 0.7751
+Epoch 3 | Step 2100 | Loss 0.6460 | Accuracy 0.7729
+Epoch 3 | Step 2200 | Loss 0.6503 | Accuracy 0.7712
+Epoch 3 | Step 2300 | Loss 0.6546 | Accuracy 0.7694
+Epoch 3 | Step 2400 | Loss 0.6587 | Accuracy 0.7678
+Epoch 3 | Step 2500 | Loss 0.6630 | Accuracy 0.7660
+Epoch 3 | Step 2600 | Loss 0.6668 | Accuracy 0.7643
+Epoch 3 | Step 2700 | Loss 0.6703 | Accuracy 0.7628
+Epoch 3 | Step 2800 | Loss 0.6737 | Accuracy 0.7613
+Epoch 3 | Step 2900 | Loss 0.6770 | Accuracy 0.7598
+Epoch 3 | Step 3000 | Loss 0.6799 | Accuracy 0.7585
+Epoch 3 | Step 3100 | Loss 0.6828 | Accuracy 0.7571
+Epoch 3 | Step 3200 | Loss 0.6855 | Accuracy 0.7558
+Epoch 3 | Step 3300 | Loss 0.6880 | Accuracy 0.7545
+Epoch 3 | Step 3400 | Loss 0.6902 | Accuracy 0.7534
+Epoch 3 | Step 3500 | Loss 0.6924 | Accuracy 0.7522
+Epoch 3 | Step 3600 | Loss 0.6944 | Accuracy 0.7512
+Epoch 3 | Step 3700 | Loss 0.6961 | Accuracy 0.7502
+Epoch 3 | Step 3800 | Loss 0.6975 | Accuracy 0.7493
+Epoch 3 | Step 3900 | Loss 0.6989 | Accuracy 0.7485
+Epoch 3 | Step 4000 | Loss 0.7001 | Accuracy 0.7477
+Epoch 3 | Step 4100 | Loss 0.7013 | Accuracy 0.7469
+Epoch 3 | Step 4200 | Loss 0.7023 | Accuracy 0.7463
+Epoch 3 | Step 4300 | Loss 0.7032 | Accuracy 0.7456
+Epoch 3 | Step 4400 | Loss 0.7038 | Accuracy 0.7451
+Epoch 3 | Step 4500 | Loss 0.7045 | Accuracy 0.7446
+Epoch 3 | Step 4600 | Loss 0.7049 | Accuracy 0.7441
+Epoch 3 | Step 4700 | Loss 0.7052 | Accuracy 0.7437
+Epoch 3 | Step 4800 | Loss 0.7053 | Accuracy 0.7435
+Epoch 3 | Step 4900 | Loss 0.7053 | Accuracy 0.7432
+Epoch 3 | Step 5000 | Loss 0.7052 | Accuracy 0.7430
+Epoch 3 | Step 5100 | Loss 0.7051 | Accuracy 0.7429
+Epoch 3 | Step 5200 | Loss 0.7048 | Accuracy 0.7427
+Epoch 3 | Step 5300 | Loss 0.7045 | Accuracy 0.7426
+Epoch 3 | Step 5400 | Loss 0.7041 | Accuracy 0.7426
+Epoch 3 | Step 5500 | Loss 0.7037 | Accuracy 0.7426
+Epoch 3 | Step 5600 | Loss 0.7032 | Accuracy 0.7426
+Epoch 3 | Step 5700 | Loss 0.7027 | Accuracy 0.7426
+Epoch 3 | Step 5800 | Loss 0.7020 | Accuracy 0.7427
+Epoch 3 | Step 5900 | Loss 0.7014 | Accuracy 0.7428
+Epoch 3 | Step 6000 | Loss 0.7007 | Accuracy 0.7430
+Epoch 3 | Step 6100 | Loss 0.6999 | Accuracy 0.7431
+Epoch 3 | Step 6200 | Loss 0.6990 | Accuracy 0.7434
+Epoch 3 | Step 6300 | Loss 0.6981 | Accuracy 0.7437
+Epoch 3 | Step 6400 | Loss 0.6972 | Accuracy 0.7439
+Epoch 3 | Step 6500 | Loss 0.6963 | Accuracy 0.7442
+Epoch 3 | Step 6600 | Loss 0.6956 | Accuracy 0.7444
+Epoch 3 | Step 6700 | Loss 0.6946 | Accuracy 0.7447
+Epoch 3 | Step 6800 | Loss 0.6938 | Accuracy 0.7450
+Epoch 3 | Step 6900 | Loss 0.6930 | Accuracy 0.7454
+Epoch 3 | Step 7000 | Loss 0.6922 | Accuracy 0.7457
+Epoch 3 | Step 7100 | Loss 0.6916 | Accuracy 0.7460
+  0%|          | 0/7172 [48:34<?, ?it/s]
+EPOCH: 3, LOSS: 0.6912, ACC: 0.7464, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-02-29 23:01:48 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 4 | Step 0 | Loss 0.9847 | Accuracy 0.5557
+Epoch 4 | Step 100 | Loss 0.2266 | Accuracy 0.9237
+Epoch 4 | Step 200 | Loss 0.2102 | Accuracy 0.9296
+Epoch 4 | Step 300 | Loss 0.2051 | Accuracy 0.9314
+Epoch 4 | Step 400 | Loss 0.2062 | Accuracy 0.9311
+Epoch 4 | Step 500 | Loss 0.2080 | Accuracy 0.9306
+Epoch 4 | Step 600 | Loss 0.2114 | Accuracy 0.9295
+Epoch 4 | Step 700 | Loss 0.2163 | Accuracy 0.9280
+Epoch 4 | Step 800 | Loss 0.2218 | Accuracy 0.9262
+Epoch 4 | Step 900 | Loss 0.2261 | Accuracy 0.9247
+Epoch 4 | Step 1000 | Loss 0.2318 | Accuracy 0.9228
+Epoch 4 | Step 1100 | Loss 0.2369 | Accuracy 0.9210
+Epoch 4 | Step 1200 | Loss 0.2408 | Accuracy 0.9196
+Epoch 4 | Step 1300 | Loss 0.2466 | Accuracy 0.9177
+Epoch 4 | Step 1400 | Loss 0.2519 | Accuracy 0.9159
+Epoch 4 | Step 1500 | Loss 0.2574 | Accuracy 0.9139
+Epoch 4 | Step 1600 | Loss 0.2625 | Accuracy 0.9121
+Epoch 4 | Step 1700 | Loss 0.2681 | Accuracy 0.9102
+Epoch 4 | Step 1800 | Loss 0.2734 | Accuracy 0.9083
+Epoch 4 | Step 1900 | Loss 0.2785 | Accuracy 0.9064
+Epoch 4 | Step 2000 | Loss 0.2838 | Accuracy 0.9045
+Epoch 4 | Step 2100 | Loss 0.2888 | Accuracy 0.9026
+Epoch 4 | Step 2200 | Loss 0.2936 | Accuracy 0.9008
+Epoch 4 | Step 2300 | Loss 0.2986 | Accuracy 0.8989
+Epoch 4 | Step 2400 | Loss 0.3036 | Accuracy 0.8970
+Epoch 4 | Step 2500 | Loss 0.3089 | Accuracy 0.8949
+Epoch 4 | Step 2600 | Loss 0.3136 | Accuracy 0.8931
+Epoch 4 | Step 2700 | Loss 0.3180 | Accuracy 0.8912
+Epoch 4 | Step 2800 | Loss 0.3223 | Accuracy 0.8895
+Epoch 4 | Step 2900 | Loss 0.3263 | Accuracy 0.8878
+Epoch 4 | Step 3000 | Loss 0.3303 | Accuracy 0.8861
+Epoch 4 | Step 3100 | Loss 0.3341 | Accuracy 0.8845
+Epoch 4 | Step 3200 | Loss 0.3377 | Accuracy 0.8829
+Epoch 4 | Step 3300 | Loss 0.3412 | Accuracy 0.8813
+Epoch 4 | Step 3400 | Loss 0.3445 | Accuracy 0.8798
+Epoch 4 | Step 3500 | Loss 0.3477 | Accuracy 0.8784
+Epoch 4 | Step 3600 | Loss 0.3504 | Accuracy 0.8771
+Epoch 4 | Step 3700 | Loss 0.3531 | Accuracy 0.8758
+Epoch 4 | Step 3800 | Loss 0.3557 | Accuracy 0.8746
+Epoch 4 | Step 3900 | Loss 0.3583 | Accuracy 0.8733
+Epoch 4 | Step 4000 | Loss 0.3608 | Accuracy 0.8721
+Epoch 4 | Step 4100 | Loss 0.3629 | Accuracy 0.8710
+Epoch 4 | Step 4200 | Loss 0.3651 | Accuracy 0.8699
+Epoch 4 | Step 4300 | Loss 0.3672 | Accuracy 0.8688
+Epoch 4 | Step 4400 | Loss 0.3689 | Accuracy 0.8679
+Epoch 4 | Step 4500 | Loss 0.3707 | Accuracy 0.8670
+Epoch 4 | Step 4600 | Loss 0.3723 | Accuracy 0.8661
+Epoch 4 | Step 4700 | Loss 0.3738 | Accuracy 0.8653
+Epoch 4 | Step 4800 | Loss 0.3752 | Accuracy 0.8645
+Epoch 4 | Step 4900 | Loss 0.3764 | Accuracy 0.8638
+Epoch 4 | Step 5000 | Loss 0.3776 | Accuracy 0.8632
+Epoch 4 | Step 5100 | Loss 0.3787 | Accuracy 0.8626
+Epoch 4 | Step 5200 | Loss 0.3797 | Accuracy 0.8619
+Epoch 4 | Step 5300 | Loss 0.3806 | Accuracy 0.8614
+Epoch 4 | Step 5400 | Loss 0.3814 | Accuracy 0.8609
+Epoch 4 | Step 5500 | Loss 0.3821 | Accuracy 0.8605
+Epoch 4 | Step 5600 | Loss 0.3828 | Accuracy 0.8601
+Epoch 4 | Step 5700 | Loss 0.3834 | Accuracy 0.8597
+Epoch 4 | Step 5800 | Loss 0.3840 | Accuracy 0.8593
+Epoch 4 | Step 5900 | Loss 0.3846 | Accuracy 0.8590
+Epoch 4 | Step 6000 | Loss 0.3851 | Accuracy 0.8587
+Epoch 4 | Step 6100 | Loss 0.3855 | Accuracy 0.8584
+Epoch 4 | Step 6200 | Loss 0.3859 | Accuracy 0.8581
+Epoch 4 | Step 6300 | Loss 0.3863 | Accuracy 0.8579
+Epoch 4 | Step 6400 | Loss 0.3867 | Accuracy 0.8576
+Epoch 4 | Step 6500 | Loss 0.3870 | Accuracy 0.8574
+Epoch 4 | Step 6600 | Loss 0.3873 | Accuracy 0.8573
+Epoch 4 | Step 6700 | Loss 0.3876 | Accuracy 0.8571
+Epoch 4 | Step 6800 | Loss 0.3878 | Accuracy 0.8569
+Epoch 4 | Step 6900 | Loss 0.3881 | Accuracy 0.8568
+Epoch 4 | Step 7000 | Loss 0.3883 | Accuracy 0.8567
+Epoch 4 | Step 7100 | Loss 0.3885 | Accuracy 0.8566
+  0%|          | 0/7172 [44:44<?, ?it/s]
+EPOCH: 4, LOSS: 0.3886, ACC: 0.8567, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-02-29 23:46:33 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 5 | Step 0 | Loss 0.8122 | Accuracy 0.6030
+Epoch 5 | Step 100 | Loss 0.1018 | Accuracy 0.9664
+Epoch 5 | Step 200 | Loss 0.0894 | Accuracy 0.9709
+Epoch 5 | Step 300 | Loss 0.0881 | Accuracy 0.9715
+Epoch 5 | Step 400 | Loss 0.0894 | Accuracy 0.9712
+Epoch 5 | Step 500 | Loss 0.0911 | Accuracy 0.9706
+Epoch 5 | Step 600 | Loss 0.0949 | Accuracy 0.9693
+Epoch 5 | Step 700 | Loss 0.0988 | Accuracy 0.9681
+Epoch 5 | Step 800 | Loss 0.1030 | Accuracy 0.9667
+Epoch 5 | Step 900 | Loss 0.1069 | Accuracy 0.9654
+Epoch 5 | Step 1000 | Loss 0.1105 | Accuracy 0.9642
+Epoch 5 | Step 1100 | Loss 0.1155 | Accuracy 0.9625
+Epoch 5 | Step 1200 | Loss 0.1198 | Accuracy 0.9610
+Epoch 5 | Step 1300 | Loss 0.1244 | Accuracy 0.9595
+Epoch 5 | Step 1400 | Loss 0.1286 | Accuracy 0.9580
+Epoch 5 | Step 1500 | Loss 0.1336 | Accuracy 0.9563
+Epoch 5 | Step 1600 | Loss 0.1380 | Accuracy 0.9547
+Epoch 5 | Step 1700 | Loss 0.1435 | Accuracy 0.9528
+Epoch 5 | Step 1800 | Loss 0.1483 | Accuracy 0.9511
+Epoch 5 | Step 1900 | Loss 0.1531 | Accuracy 0.9494
+Epoch 5 | Step 2000 | Loss 0.1582 | Accuracy 0.9476
+Epoch 5 | Step 2100 | Loss 0.1628 | Accuracy 0.9459
+Epoch 5 | Step 2200 | Loss 0.1677 | Accuracy 0.9441
+Epoch 5 | Step 2300 | Loss 0.1722 | Accuracy 0.9424
+Epoch 5 | Step 2400 | Loss 0.1768 | Accuracy 0.9407
+Epoch 5 | Step 2500 | Loss 0.1813 | Accuracy 0.9390
+Epoch 5 | Step 2600 | Loss 0.1857 | Accuracy 0.9372
+Epoch 5 | Step 2700 | Loss 0.1903 | Accuracy 0.9354
+Epoch 5 | Step 2800 | Loss 0.1944 | Accuracy 0.9338
+Epoch 5 | Step 2900 | Loss 0.1979 | Accuracy 0.9324
+Epoch 5 | Step 3000 | Loss 0.2016 | Accuracy 0.9309
+Epoch 5 | Step 3100 | Loss 0.2053 | Accuracy 0.9294
+Epoch 5 | Step 3200 | Loss 0.2089 | Accuracy 0.9279
+Epoch 5 | Step 3300 | Loss 0.2127 | Accuracy 0.9263
+Epoch 5 | Step 3400 | Loss 0.2159 | Accuracy 0.9249
+Epoch 5 | Step 3500 | Loss 0.2190 | Accuracy 0.9235
+Epoch 5 | Step 3600 | Loss 0.2221 | Accuracy 0.9222
+Epoch 5 | Step 3700 | Loss 0.2251 | Accuracy 0.9208
+Epoch 5 | Step 3800 | Loss 0.2278 | Accuracy 0.9196
+Epoch 5 | Step 3900 | Loss 0.2306 | Accuracy 0.9183
+Epoch 5 | Step 4000 | Loss 0.2331 | Accuracy 0.9172
+Epoch 5 | Step 4100 | Loss 0.2355 | Accuracy 0.9161
+Epoch 5 | Step 4200 | Loss 0.2377 | Accuracy 0.9150
+Epoch 5 | Step 4300 | Loss 0.2398 | Accuracy 0.9140
+Epoch 5 | Step 4400 | Loss 0.2417 | Accuracy 0.9131
+Epoch 5 | Step 4500 | Loss 0.2437 | Accuracy 0.9122
+Epoch 5 | Step 4600 | Loss 0.2455 | Accuracy 0.9113
+Epoch 5 | Step 4700 | Loss 0.2472 | Accuracy 0.9104
+Epoch 5 | Step 4800 | Loss 0.2489 | Accuracy 0.9096
+Epoch 5 | Step 4900 | Loss 0.2504 | Accuracy 0.9089
+Epoch 5 | Step 5000 | Loss 0.2520 | Accuracy 0.9081
+Epoch 5 | Step 5100 | Loss 0.2533 | Accuracy 0.9074
+Epoch 5 | Step 5200 | Loss 0.2546 | Accuracy 0.9068
+Epoch 5 | Step 5300 | Loss 0.2559 | Accuracy 0.9062
+Epoch 5 | Step 5400 | Loss 0.2570 | Accuracy 0.9056
+Epoch 5 | Step 5500 | Loss 0.2582 | Accuracy 0.9050
+Epoch 5 | Step 5600 | Loss 0.2593 | Accuracy 0.9044
+Epoch 5 | Step 5700 | Loss 0.2603 | Accuracy 0.9039
+Epoch 5 | Step 5800 | Loss 0.2613 | Accuracy 0.9034
+Epoch 5 | Step 5900 | Loss 0.2622 | Accuracy 0.9030
+Epoch 5 | Step 6000 | Loss 0.2630 | Accuracy 0.9026
+Epoch 5 | Step 6100 | Loss 0.2638 | Accuracy 0.9022
+Epoch 5 | Step 6200 | Loss 0.2645 | Accuracy 0.9018
+Epoch 5 | Step 6300 | Loss 0.2652 | Accuracy 0.9015
+Epoch 5 | Step 6400 | Loss 0.2658 | Accuracy 0.9012
+Epoch 5 | Step 6500 | Loss 0.2664 | Accuracy 0.9009
+Epoch 5 | Step 6600 | Loss 0.2670 | Accuracy 0.9006
+Epoch 5 | Step 6700 | Loss 0.2675 | Accuracy 0.9004
+Epoch 5 | Step 6800 | Loss 0.2680 | Accuracy 0.9001
+Epoch 5 | Step 6900 | Loss 0.2685 | Accuracy 0.8999
+Epoch 5 | Step 7000 | Loss 0.2689 | Accuracy 0.8997
+Epoch 5 | Step 7100 | Loss 0.2692 | Accuracy 0.8996
+  0%|          | 0/7172 [45:08<?, ?it/s]
+EPOCH: 5, LOSS: 0.2695, ACC: 0.8996, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 00:31:41 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 6 | Step 0 | Loss 0.8213 | Accuracy 0.6082
+Epoch 6 | Step 100 | Loss 0.0600 | Accuracy 0.9799
+Epoch 6 | Step 200 | Loss 0.0533 | Accuracy 0.9829
+Epoch 6 | Step 300 | Loss 0.0522 | Accuracy 0.9834
+Epoch 6 | Step 400 | Loss 0.0533 | Accuracy 0.9831
+Epoch 6 | Step 500 | Loss 0.0549 | Accuracy 0.9826
+Epoch 6 | Step 600 | Loss 0.0579 | Accuracy 0.9816
+Epoch 6 | Step 700 | Loss 0.0614 | Accuracy 0.9804
+Epoch 6 | Step 800 | Loss 0.0643 | Accuracy 0.9795
+Epoch 6 | Step 900 | Loss 0.0682 | Accuracy 0.9782
+Epoch 6 | Step 1000 | Loss 0.0717 | Accuracy 0.9770
+Epoch 6 | Step 1100 | Loss 0.0755 | Accuracy 0.9758
+Epoch 6 | Step 1200 | Loss 0.0789 | Accuracy 0.9746
+Epoch 6 | Step 1300 | Loss 0.0824 | Accuracy 0.9734
+Epoch 6 | Step 1400 | Loss 0.0861 | Accuracy 0.9722
+Epoch 6 | Step 1500 | Loss 0.0897 | Accuracy 0.9710
+Epoch 6 | Step 1600 | Loss 0.0939 | Accuracy 0.9696
+Epoch 6 | Step 1700 | Loss 0.0980 | Accuracy 0.9681
+Epoch 6 | Step 1800 | Loss 0.1016 | Accuracy 0.9669
+Epoch 6 | Step 1900 | Loss 0.1060 | Accuracy 0.9653
+Epoch 6 | Step 2000 | Loss 0.1101 | Accuracy 0.9638
+Epoch 6 | Step 2100 | Loss 0.1139 | Accuracy 0.9625
+Epoch 6 | Step 2200 | Loss 0.1179 | Accuracy 0.9610
+Epoch 6 | Step 2300 | Loss 0.1222 | Accuracy 0.9595
+Epoch 6 | Step 2400 | Loss 0.1264 | Accuracy 0.9579
+Epoch 6 | Step 2500 | Loss 0.1299 | Accuracy 0.9566
+Epoch 6 | Step 2600 | Loss 0.1340 | Accuracy 0.9550
+Epoch 6 | Step 2700 | Loss 0.1374 | Accuracy 0.9537
+Epoch 6 | Step 2800 | Loss 0.1410 | Accuracy 0.9523
+Epoch 6 | Step 2900 | Loss 0.1448 | Accuracy 0.9508
+Epoch 6 | Step 3000 | Loss 0.1483 | Accuracy 0.9494
+Epoch 6 | Step 3100 | Loss 0.1518 | Accuracy 0.9480
+Epoch 6 | Step 3200 | Loss 0.1550 | Accuracy 0.9467
+Epoch 6 | Step 3300 | Loss 0.1582 | Accuracy 0.9454
+Epoch 6 | Step 3400 | Loss 0.1612 | Accuracy 0.9441
+Epoch 6 | Step 3500 | Loss 0.1642 | Accuracy 0.9428
+Epoch 6 | Step 3600 | Loss 0.1670 | Accuracy 0.9417
+Epoch 6 | Step 3700 | Loss 0.1697 | Accuracy 0.9405
+Epoch 6 | Step 3800 | Loss 0.1723 | Accuracy 0.9393
+Epoch 6 | Step 3900 | Loss 0.1748 | Accuracy 0.9382
+Epoch 6 | Step 4000 | Loss 0.1771 | Accuracy 0.9371
+Epoch 6 | Step 4100 | Loss 0.1794 | Accuracy 0.9361
+Epoch 6 | Step 4200 | Loss 0.1816 | Accuracy 0.9351
+Epoch 6 | Step 4300 | Loss 0.1837 | Accuracy 0.9341
+Epoch 6 | Step 4400 | Loss 0.1858 | Accuracy 0.9331
+Epoch 6 | Step 4500 | Loss 0.1877 | Accuracy 0.9322
+Epoch 6 | Step 4600 | Loss 0.1894 | Accuracy 0.9314
+Epoch 6 | Step 4700 | Loss 0.1911 | Accuracy 0.9306
+Epoch 6 | Step 4800 | Loss 0.1928 | Accuracy 0.9298
+Epoch 6 | Step 4900 | Loss 0.1944 | Accuracy 0.9290
+Epoch 6 | Step 5000 | Loss 0.1959 | Accuracy 0.9283
+Epoch 6 | Step 5100 | Loss 0.1973 | Accuracy 0.9276
+Epoch 6 | Step 5200 | Loss 0.1987 | Accuracy 0.9269
+Epoch 6 | Step 5300 | Loss 0.1999 | Accuracy 0.9264
+Epoch 6 | Step 5400 | Loss 0.2010 | Accuracy 0.9258
+Epoch 6 | Step 5500 | Loss 0.2022 | Accuracy 0.9253
+Epoch 6 | Step 5600 | Loss 0.2032 | Accuracy 0.9248
+Epoch 6 | Step 5700 | Loss 0.2042 | Accuracy 0.9243
+Epoch 6 | Step 5800 | Loss 0.2051 | Accuracy 0.9239
+Epoch 6 | Step 5900 | Loss 0.2060 | Accuracy 0.9235
+Epoch 6 | Step 6000 | Loss 0.2068 | Accuracy 0.9231
+Epoch 6 | Step 6100 | Loss 0.2076 | Accuracy 0.9227
+Epoch 6 | Step 6200 | Loss 0.2082 | Accuracy 0.9224
+Epoch 6 | Step 6300 | Loss 0.2089 | Accuracy 0.9221
+Epoch 6 | Step 6400 | Loss 0.2094 | Accuracy 0.9218
+Epoch 6 | Step 6500 | Loss 0.2099 | Accuracy 0.9216
+Epoch 6 | Step 6600 | Loss 0.2104 | Accuracy 0.9214
+Epoch 6 | Step 6700 | Loss 0.2109 | Accuracy 0.9212
+Epoch 6 | Step 6800 | Loss 0.2113 | Accuracy 0.9210
+Epoch 6 | Step 6900 | Loss 0.2117 | Accuracy 0.9208
+Epoch 6 | Step 7000 | Loss 0.2121 | Accuracy 0.9206
+Epoch 6 | Step 7100 | Loss 0.2124 | Accuracy 0.9205
+  0%|          | 0/7172 [46:42<?, ?it/s]
+EPOCH: 6, LOSS: 0.2127, ACC: 0.9205, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 01:18:24 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 7 | Step 0 | Loss 0.9443 | Accuracy 0.6033
+Epoch 7 | Step 100 | Loss 0.0512 | Accuracy 0.9831
+Epoch 7 | Step 200 | Loss 0.0404 | Accuracy 0.9872
+Epoch 7 | Step 300 | Loss 0.0386 | Accuracy 0.9880
+Epoch 7 | Step 400 | Loss 0.0391 | Accuracy 0.9878
+Epoch 7 | Step 500 | Loss 0.0412 | Accuracy 0.9872
+Epoch 7 | Step 600 | Loss 0.0431 | Accuracy 0.9865
+Epoch 7 | Step 700 | Loss 0.0458 | Accuracy 0.9856
+Epoch 7 | Step 800 | Loss 0.0482 | Accuracy 0.9848
+Epoch 7 | Step 900 | Loss 0.0508 | Accuracy 0.9839
+Epoch 7 | Step 1000 | Loss 0.0536 | Accuracy 0.9830
+Epoch 7 | Step 1100 | Loss 0.0575 | Accuracy 0.9817
+Epoch 7 | Step 1200 | Loss 0.0609 | Accuracy 0.9805
+Epoch 7 | Step 1300 | Loss 0.0644 | Accuracy 0.9794
+Epoch 7 | Step 1400 | Loss 0.0675 | Accuracy 0.9783
+Epoch 7 | Step 1500 | Loss 0.0708 | Accuracy 0.9772
+Epoch 7 | Step 1600 | Loss 0.0740 | Accuracy 0.9761
+Epoch 7 | Step 1700 | Loss 0.0773 | Accuracy 0.9749
+Epoch 7 | Step 1800 | Loss 0.0812 | Accuracy 0.9736
+Epoch 7 | Step 1900 | Loss 0.0846 | Accuracy 0.9724
+Epoch 7 | Step 2000 | Loss 0.0886 | Accuracy 0.9710
+Epoch 7 | Step 2100 | Loss 0.0923 | Accuracy 0.9697
+Epoch 7 | Step 2200 | Loss 0.0959 | Accuracy 0.9683
+Epoch 7 | Step 2300 | Loss 0.0993 | Accuracy 0.9671
+Epoch 7 | Step 2400 | Loss 0.1026 | Accuracy 0.9659
+Epoch 7 | Step 2500 | Loss 0.1060 | Accuracy 0.9646
+Epoch 7 | Step 2600 | Loss 0.1092 | Accuracy 0.9634
+Epoch 7 | Step 2700 | Loss 0.1125 | Accuracy 0.9621
+Epoch 7 | Step 2800 | Loss 0.1156 | Accuracy 0.9609
+Epoch 7 | Step 2900 | Loss 0.1187 | Accuracy 0.9597
+Epoch 7 | Step 3000 | Loss 0.1219 | Accuracy 0.9585
+Epoch 7 | Step 3100 | Loss 0.1250 | Accuracy 0.9572
+Epoch 7 | Step 3200 | Loss 0.1279 | Accuracy 0.9560
+Epoch 7 | Step 3300 | Loss 0.1308 | Accuracy 0.9548
+Epoch 7 | Step 3400 | Loss 0.1337 | Accuracy 0.9536
+Epoch 7 | Step 3500 | Loss 0.1363 | Accuracy 0.9525
+Epoch 7 | Step 3600 | Loss 0.1390 | Accuracy 0.9514
+Epoch 7 | Step 3700 | Loss 0.1415 | Accuracy 0.9503
+Epoch 7 | Step 3800 | Loss 0.1438 | Accuracy 0.9493
+Epoch 7 | Step 3900 | Loss 0.1461 | Accuracy 0.9483
+Epoch 7 | Step 4000 | Loss 0.1483 | Accuracy 0.9473
+Epoch 7 | Step 4100 | Loss 0.1504 | Accuracy 0.9463
+Epoch 7 | Step 4200 | Loss 0.1524 | Accuracy 0.9454
+Epoch 7 | Step 4300 | Loss 0.1545 | Accuracy 0.9445
+Epoch 7 | Step 4400 | Loss 0.1563 | Accuracy 0.9437
+Epoch 7 | Step 4500 | Loss 0.1580 | Accuracy 0.9429
+Epoch 7 | Step 4600 | Loss 0.1598 | Accuracy 0.9421
+Epoch 7 | Step 4700 | Loss 0.1614 | Accuracy 0.9413
+Epoch 7 | Step 4800 | Loss 0.1629 | Accuracy 0.9406
+Epoch 7 | Step 4900 | Loss 0.1643 | Accuracy 0.9400
+Epoch 7 | Step 5000 | Loss 0.1657 | Accuracy 0.9393
+Epoch 7 | Step 5100 | Loss 0.1670 | Accuracy 0.9387
+Epoch 7 | Step 5200 | Loss 0.1682 | Accuracy 0.9382
+Epoch 7 | Step 5300 | Loss 0.1694 | Accuracy 0.9376
+Epoch 7 | Step 5400 | Loss 0.1705 | Accuracy 0.9371
+Epoch 7 | Step 5500 | Loss 0.1715 | Accuracy 0.9367
+Epoch 7 | Step 5600 | Loss 0.1725 | Accuracy 0.9362
+Epoch 7 | Step 5700 | Loss 0.1734 | Accuracy 0.9358
+Epoch 7 | Step 5800 | Loss 0.1743 | Accuracy 0.9354
+Epoch 7 | Step 5900 | Loss 0.1751 | Accuracy 0.9351
+Epoch 7 | Step 6000 | Loss 0.1757 | Accuracy 0.9348
+Epoch 7 | Step 6100 | Loss 0.1764 | Accuracy 0.9345
+Epoch 7 | Step 6200 | Loss 0.1771 | Accuracy 0.9342
+Epoch 7 | Step 6300 | Loss 0.1777 | Accuracy 0.9339
+Epoch 7 | Step 6400 | Loss 0.1783 | Accuracy 0.9337
+Epoch 7 | Step 6500 | Loss 0.1788 | Accuracy 0.9334
+Epoch 7 | Step 6600 | Loss 0.1793 | Accuracy 0.9332
+Epoch 7 | Step 6700 | Loss 0.1797 | Accuracy 0.9330
+Epoch 7 | Step 6800 | Loss 0.1801 | Accuracy 0.9329
+Epoch 7 | Step 6900 | Loss 0.1805 | Accuracy 0.9327
+Epoch 7 | Step 7000 | Loss 0.1808 | Accuracy 0.9326
+Epoch 7 | Step 7100 | Loss 0.1811 | Accuracy 0.9324
+  0%|          | 0/7172 [47:10<?, ?it/s]
+EPOCH: 7, LOSS: 0.1813, ACC: 0.9325, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 02:05:34 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 8 | Step 0 | Loss 1.0243 | Accuracy 0.6166
+Epoch 8 | Step 100 | Loss 0.0425 | Accuracy 0.9862
+Epoch 8 | Step 200 | Loss 0.0328 | Accuracy 0.9897
+Epoch 8 | Step 300 | Loss 0.0311 | Accuracy 0.9903
+Epoch 8 | Step 400 | Loss 0.0316 | Accuracy 0.9902
+Epoch 8 | Step 500 | Loss 0.0330 | Accuracy 0.9897
+Epoch 8 | Step 600 | Loss 0.0351 | Accuracy 0.9890
+Epoch 8 | Step 700 | Loss 0.0378 | Accuracy 0.9881
+Epoch 8 | Step 800 | Loss 0.0399 | Accuracy 0.9874
+Epoch 8 | Step 900 | Loss 0.0428 | Accuracy 0.9865
+Epoch 8 | Step 1000 | Loss 0.0450 | Accuracy 0.9857
+Epoch 8 | Step 1100 | Loss 0.0475 | Accuracy 0.9848
+Epoch 8 | Step 1200 | Loss 0.0503 | Accuracy 0.9839
+Epoch 8 | Step 1300 | Loss 0.0532 | Accuracy 0.9830
+Epoch 8 | Step 1400 | Loss 0.0565 | Accuracy 0.9818
+Epoch 8 | Step 1500 | Loss 0.0597 | Accuracy 0.9807
+Epoch 8 | Step 1600 | Loss 0.0626 | Accuracy 0.9797
+Epoch 8 | Step 1700 | Loss 0.0658 | Accuracy 0.9786
+Epoch 8 | Step 1800 | Loss 0.0690 | Accuracy 0.9775
+Epoch 8 | Step 1900 | Loss 0.0720 | Accuracy 0.9765
+Epoch 8 | Step 2000 | Loss 0.0748 | Accuracy 0.9755
+Epoch 8 | Step 2100 | Loss 0.0778 | Accuracy 0.9744
+Epoch 8 | Step 2200 | Loss 0.0807 | Accuracy 0.9733
+Epoch 8 | Step 2300 | Loss 0.0837 | Accuracy 0.9723
+Epoch 8 | Step 2400 | Loss 0.0872 | Accuracy 0.9710
+Epoch 8 | Step 2500 | Loss 0.0903 | Accuracy 0.9699
+Epoch 8 | Step 2600 | Loss 0.0933 | Accuracy 0.9687
+Epoch 8 | Step 2700 | Loss 0.0966 | Accuracy 0.9674
+Epoch 8 | Step 2800 | Loss 0.0997 | Accuracy 0.9663
+Epoch 8 | Step 2900 | Loss 0.1027 | Accuracy 0.9651
+Epoch 8 | Step 3000 | Loss 0.1058 | Accuracy 0.9638
+Epoch 8 | Step 3100 | Loss 0.1087 | Accuracy 0.9627
+Epoch 8 | Step 3200 | Loss 0.1116 | Accuracy 0.9615
+Epoch 8 | Step 3300 | Loss 0.1142 | Accuracy 0.9604
+Epoch 8 | Step 3400 | Loss 0.1167 | Accuracy 0.9594
+Epoch 8 | Step 3500 | Loss 0.1191 | Accuracy 0.9584
+Epoch 8 | Step 3600 | Loss 0.1214 | Accuracy 0.9574
+Epoch 8 | Step 3700 | Loss 0.1239 | Accuracy 0.9564
+Epoch 8 | Step 3800 | Loss 0.1262 | Accuracy 0.9554
+Epoch 8 | Step 3900 | Loss 0.1285 | Accuracy 0.9544
+Epoch 8 | Step 4000 | Loss 0.1306 | Accuracy 0.9534
+Epoch 8 | Step 4100 | Loss 0.1324 | Accuracy 0.9526
+Epoch 8 | Step 4200 | Loss 0.1342 | Accuracy 0.9518
+Epoch 8 | Step 4300 | Loss 0.1361 | Accuracy 0.9510
+Epoch 8 | Step 4400 | Loss 0.1378 | Accuracy 0.9503
+Epoch 8 | Step 4500 | Loss 0.1394 | Accuracy 0.9495
+Epoch 8 | Step 4600 | Loss 0.1410 | Accuracy 0.9488
+Epoch 8 | Step 4700 | Loss 0.1425 | Accuracy 0.9481
+Epoch 8 | Step 4800 | Loss 0.1440 | Accuracy 0.9475
+Epoch 8 | Step 4900 | Loss 0.1452 | Accuracy 0.9469
+Epoch 8 | Step 5000 | Loss 0.1466 | Accuracy 0.9463
+Epoch 8 | Step 5100 | Loss 0.1477 | Accuracy 0.9458
+Epoch 8 | Step 5200 | Loss 0.1488 | Accuracy 0.9453
+Epoch 8 | Step 5300 | Loss 0.1499 | Accuracy 0.9449
+Epoch 8 | Step 5400 | Loss 0.1508 | Accuracy 0.9445
+Epoch 8 | Step 5500 | Loss 0.1517 | Accuracy 0.9440
+Epoch 8 | Step 5600 | Loss 0.1526 | Accuracy 0.9437
+Epoch 8 | Step 5700 | Loss 0.1535 | Accuracy 0.9433
+Epoch 8 | Step 5800 | Loss 0.1543 | Accuracy 0.9429
+Epoch 8 | Step 5900 | Loss 0.1550 | Accuracy 0.9426
+Epoch 8 | Step 6000 | Loss 0.1557 | Accuracy 0.9423
+Epoch 8 | Step 6100 | Loss 0.1564 | Accuracy 0.9420
+Epoch 8 | Step 6200 | Loss 0.1570 | Accuracy 0.9418
+Epoch 8 | Step 6300 | Loss 0.1576 | Accuracy 0.9415
+Epoch 8 | Step 6400 | Loss 0.1581 | Accuracy 0.9413
+Epoch 8 | Step 6500 | Loss 0.1586 | Accuracy 0.9411
+Epoch 8 | Step 6600 | Loss 0.1591 | Accuracy 0.9409
+Epoch 8 | Step 6700 | Loss 0.1595 | Accuracy 0.9407
+Epoch 8 | Step 6800 | Loss 0.1599 | Accuracy 0.9405
+Epoch 8 | Step 6900 | Loss 0.1603 | Accuracy 0.9404
+Epoch 8 | Step 7000 | Loss 0.1606 | Accuracy 0.9402
+Epoch 8 | Step 7100 | Loss 0.1609 | Accuracy 0.9401
+  0%|          | 0/7172 [47:24<?, ?it/s]
+EPOCH: 8, LOSS: 0.1611, ACC: 0.9401, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 02:52:59 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 9 | Step 0 | Loss 1.0145 | Accuracy 0.6219
+Epoch 9 | Step 100 | Loss 0.0396 | Accuracy 0.9871
+Epoch 9 | Step 200 | Loss 0.0281 | Accuracy 0.9911
+Epoch 9 | Step 300 | Loss 0.0261 | Accuracy 0.9919
+Epoch 9 | Step 400 | Loss 0.0269 | Accuracy 0.9917
+Epoch 9 | Step 500 | Loss 0.0279 | Accuracy 0.9913
+Epoch 9 | Step 600 | Loss 0.0301 | Accuracy 0.9906
+Epoch 9 | Step 700 | Loss 0.0318 | Accuracy 0.9901
+Epoch 9 | Step 800 | Loss 0.0331 | Accuracy 0.9896
+Epoch 9 | Step 900 | Loss 0.0351 | Accuracy 0.9889
+Epoch 9 | Step 1000 | Loss 0.0378 | Accuracy 0.9880
+Epoch 9 | Step 1100 | Loss 0.0403 | Accuracy 0.9872
+Epoch 9 | Step 1200 | Loss 0.0432 | Accuracy 0.9862
+Epoch 9 | Step 1300 | Loss 0.0460 | Accuracy 0.9853
+Epoch 9 | Step 1400 | Loss 0.0487 | Accuracy 0.9843
+Epoch 9 | Step 1500 | Loss 0.0517 | Accuracy 0.9833
+Epoch 9 | Step 1600 | Loss 0.0547 | Accuracy 0.9823
+Epoch 9 | Step 1700 | Loss 0.0574 | Accuracy 0.9814
+Epoch 9 | Step 1800 | Loss 0.0599 | Accuracy 0.9805
+Epoch 9 | Step 1900 | Loss 0.0632 | Accuracy 0.9794
+Epoch 9 | Step 2000 | Loss 0.0662 | Accuracy 0.9783
+Epoch 9 | Step 2100 | Loss 0.0689 | Accuracy 0.9773
+Epoch 9 | Step 2200 | Loss 0.0718 | Accuracy 0.9763
+Epoch 9 | Step 2300 | Loss 0.0746 | Accuracy 0.9753
+Epoch 9 | Step 2400 | Loss 0.0775 | Accuracy 0.9742
+Epoch 9 | Step 2500 | Loss 0.0805 | Accuracy 0.9731
+Epoch 9 | Step 2600 | Loss 0.0830 | Accuracy 0.9722
+Epoch 9 | Step 2700 | Loss 0.0857 | Accuracy 0.9712
+Epoch 9 | Step 2800 | Loss 0.0885 | Accuracy 0.9701
+Epoch 9 | Step 2900 | Loss 0.0913 | Accuracy 0.9690
+Epoch 9 | Step 3000 | Loss 0.0939 | Accuracy 0.9680
+Epoch 9 | Step 3100 | Loss 0.0966 | Accuracy 0.9670
+Epoch 9 | Step 3200 | Loss 0.0993 | Accuracy 0.9659
+Epoch 9 | Step 3300 | Loss 0.1017 | Accuracy 0.9649
+Epoch 9 | Step 3400 | Loss 0.1040 | Accuracy 0.9640
+Epoch 9 | Step 3500 | Loss 0.1065 | Accuracy 0.9629
+Epoch 9 | Step 3600 | Loss 0.1088 | Accuracy 0.9620
+Epoch 9 | Step 3700 | Loss 0.1110 | Accuracy 0.9610
+Epoch 9 | Step 3800 | Loss 0.1131 | Accuracy 0.9601
+Epoch 9 | Step 3900 | Loss 0.1151 | Accuracy 0.9593
+Epoch 9 | Step 4000 | Loss 0.1170 | Accuracy 0.9585
+Epoch 9 | Step 4100 | Loss 0.1188 | Accuracy 0.9577
+Epoch 9 | Step 4200 | Loss 0.1205 | Accuracy 0.9569
+Epoch 9 | Step 4300 | Loss 0.1222 | Accuracy 0.9562
+Epoch 9 | Step 4400 | Loss 0.1238 | Accuracy 0.9555
+Epoch 9 | Step 4500 | Loss 0.1253 | Accuracy 0.9548
+Epoch 9 | Step 4600 | Loss 0.1268 | Accuracy 0.9541
+Epoch 9 | Step 4700 | Loss 0.1282 | Accuracy 0.9535
+Epoch 9 | Step 4800 | Loss 0.1295 | Accuracy 0.9529
+Epoch 9 | Step 4900 | Loss 0.1308 | Accuracy 0.9524
+Epoch 9 | Step 5000 | Loss 0.1320 | Accuracy 0.9519
+Epoch 9 | Step 5100 | Loss 0.1331 | Accuracy 0.9514
+Epoch 9 | Step 5200 | Loss 0.1342 | Accuracy 0.9509
+Epoch 9 | Step 5300 | Loss 0.1352 | Accuracy 0.9504
+Epoch 9 | Step 5400 | Loss 0.1361 | Accuracy 0.9500
+Epoch 9 | Step 5500 | Loss 0.1370 | Accuracy 0.9496
+Epoch 9 | Step 5600 | Loss 0.1380 | Accuracy 0.9492
+Epoch 9 | Step 5700 | Loss 0.1387 | Accuracy 0.9489
+Epoch 9 | Step 5800 | Loss 0.1395 | Accuracy 0.9486
+Epoch 9 | Step 5900 | Loss 0.1403 | Accuracy 0.9483
+Epoch 9 | Step 6000 | Loss 0.1409 | Accuracy 0.9480
+Epoch 9 | Step 6100 | Loss 0.1415 | Accuracy 0.9477
+Epoch 9 | Step 6200 | Loss 0.1421 | Accuracy 0.9475
+Epoch 9 | Step 6300 | Loss 0.1426 | Accuracy 0.9472
+Epoch 9 | Step 6400 | Loss 0.1431 | Accuracy 0.9470
+Epoch 9 | Step 6500 | Loss 0.1436 | Accuracy 0.9468
+Epoch 9 | Step 6600 | Loss 0.1441 | Accuracy 0.9466
+Epoch 9 | Step 6700 | Loss 0.1445 | Accuracy 0.9464
+Epoch 9 | Step 6800 | Loss 0.1449 | Accuracy 0.9463
+Epoch 9 | Step 6900 | Loss 0.1452 | Accuracy 0.9461
+Epoch 9 | Step 7000 | Loss 0.1456 | Accuracy 0.9460
+Epoch 9 | Step 7100 | Loss 0.1459 | Accuracy 0.9458
+  0%|          | 0/7172 [45:54<?, ?it/s]
+EPOCH: 9, LOSS: 0.1461, ACC: 0.9459, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 03:38:53 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 10 | Step 0 | Loss 1.1394 | Accuracy 0.6219
+Epoch 10 | Step 100 | Loss 0.0363 | Accuracy 0.9884
+Epoch 10 | Step 200 | Loss 0.0259 | Accuracy 0.9920
+Epoch 10 | Step 300 | Loss 0.0239 | Accuracy 0.9926
+Epoch 10 | Step 400 | Loss 0.0242 | Accuracy 0.9925
+Epoch 10 | Step 500 | Loss 0.0250 | Accuracy 0.9923
+Epoch 10 | Step 600 | Loss 0.0265 | Accuracy 0.9918
+Epoch 10 | Step 700 | Loss 0.0286 | Accuracy 0.9911
+Epoch 10 | Step 800 | Loss 0.0306 | Accuracy 0.9904
+Epoch 10 | Step 900 | Loss 0.0325 | Accuracy 0.9898
+Epoch 10 | Step 1000 | Loss 0.0346 | Accuracy 0.9891
+Epoch 10 | Step 1100 | Loss 0.0368 | Accuracy 0.9883
+Epoch 10 | Step 1200 | Loss 0.0391 | Accuracy 0.9875
+Epoch 10 | Step 1300 | Loss 0.0416 | Accuracy 0.9867
+Epoch 10 | Step 1400 | Loss 0.0440 | Accuracy 0.9858
+Epoch 10 | Step 1500 | Loss 0.0468 | Accuracy 0.9849
+Epoch 10 | Step 1600 | Loss 0.0494 | Accuracy 0.9840
+Epoch 10 | Step 1700 | Loss 0.0523 | Accuracy 0.9830
+Epoch 10 | Step 1800 | Loss 0.0548 | Accuracy 0.9821
+Epoch 10 | Step 1900 | Loss 0.0575 | Accuracy 0.9812
+Epoch 10 | Step 2000 | Loss 0.0606 | Accuracy 0.9801
+Epoch 10 | Step 2100 | Loss 0.0633 | Accuracy 0.9791
+Epoch 10 | Step 2200 | Loss 0.0659 | Accuracy 0.9782
+Epoch 10 | Step 2300 | Loss 0.0686 | Accuracy 0.9772
+Epoch 10 | Step 2400 | Loss 0.0712 | Accuracy 0.9763
+Epoch 10 | Step 2500 | Loss 0.0738 | Accuracy 0.9753
+Epoch 10 | Step 2600 | Loss 0.0766 | Accuracy 0.9743
+Epoch 10 | Step 2700 | Loss 0.0789 | Accuracy 0.9734
+Epoch 10 | Step 2800 | Loss 0.0816 | Accuracy 0.9724
+Epoch 10 | Step 2900 | Loss 0.0843 | Accuracy 0.9713
+Epoch 10 | Step 3000 | Loss 0.0867 | Accuracy 0.9704
+Epoch 10 | Step 3100 | Loss 0.0893 | Accuracy 0.9694
+Epoch 10 | Step 3200 | Loss 0.0918 | Accuracy 0.9684
+Epoch 10 | Step 3300 | Loss 0.0941 | Accuracy 0.9674
+Epoch 10 | Step 3400 | Loss 0.0963 | Accuracy 0.9666
+Epoch 10 | Step 3500 | Loss 0.0983 | Accuracy 0.9657
+Epoch 10 | Step 3600 | Loss 0.1004 | Accuracy 0.9648
+Epoch 10 | Step 3700 | Loss 0.1025 | Accuracy 0.9640
+Epoch 10 | Step 3800 | Loss 0.1044 | Accuracy 0.9631
+Epoch 10 | Step 3900 | Loss 0.1063 | Accuracy 0.9623
+Epoch 10 | Step 4000 | Loss 0.1082 | Accuracy 0.9615
+Epoch 10 | Step 4100 | Loss 0.1099 | Accuracy 0.9608
+Epoch 10 | Step 4200 | Loss 0.1115 | Accuracy 0.9601
+Epoch 10 | Step 4300 | Loss 0.1131 | Accuracy 0.9594
+Epoch 10 | Step 4400 | Loss 0.1147 | Accuracy 0.9587
+Epoch 10 | Step 4500 | Loss 0.1161 | Accuracy 0.9580
+Epoch 10 | Step 4600 | Loss 0.1175 | Accuracy 0.9575
+Epoch 10 | Step 4700 | Loss 0.1187 | Accuracy 0.9569
+Epoch 10 | Step 4800 | Loss 0.1200 | Accuracy 0.9563
+Epoch 10 | Step 4900 | Loss 0.1212 | Accuracy 0.9558
+Epoch 10 | Step 5000 | Loss 0.1223 | Accuracy 0.9553
+Epoch 10 | Step 5100 | Loss 0.1233 | Accuracy 0.9549
+Epoch 10 | Step 5200 | Loss 0.1243 | Accuracy 0.9544
+Epoch 10 | Step 5300 | Loss 0.1253 | Accuracy 0.9540
+Epoch 10 | Step 5400 | Loss 0.1263 | Accuracy 0.9536
+Epoch 10 | Step 5500 | Loss 0.1272 | Accuracy 0.9532
+Epoch 10 | Step 5600 | Loss 0.1280 | Accuracy 0.9529
+Epoch 10 | Step 5700 | Loss 0.1288 | Accuracy 0.9525
+Epoch 10 | Step 5800 | Loss 0.1295 | Accuracy 0.9522
+Epoch 10 | Step 5900 | Loss 0.1302 | Accuracy 0.9519
+Epoch 10 | Step 6000 | Loss 0.1309 | Accuracy 0.9516
+Epoch 10 | Step 6100 | Loss 0.1315 | Accuracy 0.9514
+Epoch 10 | Step 6200 | Loss 0.1320 | Accuracy 0.9511
+Epoch 10 | Step 6300 | Loss 0.1326 | Accuracy 0.9509
+Epoch 10 | Step 6400 | Loss 0.1331 | Accuracy 0.9507
+Epoch 10 | Step 6500 | Loss 0.1336 | Accuracy 0.9505
+Epoch 10 | Step 6600 | Loss 0.1340 | Accuracy 0.9503
+Epoch 10 | Step 6700 | Loss 0.1345 | Accuracy 0.9501
+Epoch 10 | Step 6800 | Loss 0.1348 | Accuracy 0.9499
+Epoch 10 | Step 6900 | Loss 0.1352 | Accuracy 0.9498
+Epoch 10 | Step 7000 | Loss 0.1356 | Accuracy 0.9496
+Epoch 10 | Step 7100 | Loss 0.1359 | Accuracy 0.9495
+  0%|          | 0/7172 [44:18<?, ?it/s]
+EPOCH: 10, LOSS: 0.1362, ACC: 0.9495, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 04:23:12 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 11 | Step 0 | Loss 1.0270 | Accuracy 0.6411
+Epoch 11 | Step 100 | Loss 0.0348 | Accuracy 0.9892
+Epoch 11 | Step 200 | Loss 0.0251 | Accuracy 0.9924
+Epoch 11 | Step 300 | Loss 0.0227 | Accuracy 0.9931
+Epoch 11 | Step 400 | Loss 0.0229 | Accuracy 0.9930
+Epoch 11 | Step 500 | Loss 0.0240 | Accuracy 0.9926
+Epoch 11 | Step 600 | Loss 0.0253 | Accuracy 0.9922
+Epoch 11 | Step 700 | Loss 0.0266 | Accuracy 0.9917
+Epoch 11 | Step 800 | Loss 0.0287 | Accuracy 0.9911
+Epoch 11 | Step 900 | Loss 0.0306 | Accuracy 0.9904
+Epoch 11 | Step 1000 | Loss 0.0321 | Accuracy 0.9899
+Epoch 11 | Step 1100 | Loss 0.0344 | Accuracy 0.9892
+Epoch 11 | Step 1200 | Loss 0.0367 | Accuracy 0.9884
+Epoch 11 | Step 1300 | Loss 0.0388 | Accuracy 0.9877
+Epoch 11 | Step 1400 | Loss 0.0410 | Accuracy 0.9869
+Epoch 11 | Step 1500 | Loss 0.0435 | Accuracy 0.9861
+Epoch 11 | Step 1600 | Loss 0.0460 | Accuracy 0.9852
+Epoch 11 | Step 1700 | Loss 0.0484 | Accuracy 0.9844
+Epoch 11 | Step 1800 | Loss 0.0514 | Accuracy 0.9833
+Epoch 11 | Step 1900 | Loss 0.0540 | Accuracy 0.9825
+Epoch 11 | Step 2000 | Loss 0.0563 | Accuracy 0.9817
+Epoch 11 | Step 2100 | Loss 0.0588 | Accuracy 0.9807
+Epoch 11 | Step 2200 | Loss 0.0617 | Accuracy 0.9797
+Epoch 11 | Step 2300 | Loss 0.0642 | Accuracy 0.9788
+Epoch 11 | Step 2400 | Loss 0.0668 | Accuracy 0.9778
+Epoch 11 | Step 2500 | Loss 0.0694 | Accuracy 0.9769
+Epoch 11 | Step 2600 | Loss 0.0719 | Accuracy 0.9759
+Epoch 11 | Step 2700 | Loss 0.0745 | Accuracy 0.9749
+Epoch 11 | Step 2800 | Loss 0.0768 | Accuracy 0.9741
+Epoch 11 | Step 2900 | Loss 0.0792 | Accuracy 0.9731
+Epoch 11 | Step 3000 | Loss 0.0815 | Accuracy 0.9722
+Epoch 11 | Step 3100 | Loss 0.0838 | Accuracy 0.9713
+Epoch 11 | Step 3200 | Loss 0.0861 | Accuracy 0.9704
+Epoch 11 | Step 3300 | Loss 0.0884 | Accuracy 0.9695
+Epoch 11 | Step 3400 | Loss 0.0905 | Accuracy 0.9686
+Epoch 11 | Step 3500 | Loss 0.0926 | Accuracy 0.9678
+Epoch 11 | Step 3600 | Loss 0.0945 | Accuracy 0.9670
+Epoch 11 | Step 3700 | Loss 0.0966 | Accuracy 0.9661
+Epoch 11 | Step 3800 | Loss 0.0984 | Accuracy 0.9654
+Epoch 11 | Step 3900 | Loss 0.1003 | Accuracy 0.9646
+Epoch 11 | Step 4000 | Loss 0.1019 | Accuracy 0.9638
+Epoch 11 | Step 4100 | Loss 0.1036 | Accuracy 0.9631
+Epoch 11 | Step 4200 | Loss 0.1052 | Accuracy 0.9624
+Epoch 11 | Step 4300 | Loss 0.1068 | Accuracy 0.9617
+Epoch 11 | Step 4400 | Loss 0.1082 | Accuracy 0.9611
+Epoch 11 | Step 4500 | Loss 0.1096 | Accuracy 0.9605
+Epoch 11 | Step 4600 | Loss 0.1109 | Accuracy 0.9599
+Epoch 11 | Step 4700 | Loss 0.1122 | Accuracy 0.9593
+Epoch 11 | Step 4800 | Loss 0.1134 | Accuracy 0.9588
+Epoch 11 | Step 4900 | Loss 0.1145 | Accuracy 0.9583
+Epoch 11 | Step 5000 | Loss 0.1156 | Accuracy 0.9579
+Epoch 11 | Step 5100 | Loss 0.1166 | Accuracy 0.9574
+Epoch 11 | Step 5200 | Loss 0.1175 | Accuracy 0.9570
+Epoch 11 | Step 5300 | Loss 0.1185 | Accuracy 0.9566
+Epoch 11 | Step 5400 | Loss 0.1193 | Accuracy 0.9562
+Epoch 11 | Step 5500 | Loss 0.1202 | Accuracy 0.9559
+Epoch 11 | Step 5600 | Loss 0.1210 | Accuracy 0.9555
+Epoch 11 | Step 5700 | Loss 0.1217 | Accuracy 0.9552
+Epoch 11 | Step 5800 | Loss 0.1224 | Accuracy 0.9549
+Epoch 11 | Step 5900 | Loss 0.1230 | Accuracy 0.9547
+Epoch 11 | Step 6000 | Loss 0.1236 | Accuracy 0.9544
+Epoch 11 | Step 6100 | Loss 0.1242 | Accuracy 0.9542
+Epoch 11 | Step 6200 | Loss 0.1247 | Accuracy 0.9539
+Epoch 11 | Step 6300 | Loss 0.1252 | Accuracy 0.9537
+Epoch 11 | Step 6400 | Loss 0.1257 | Accuracy 0.9535
+Epoch 11 | Step 6500 | Loss 0.1261 | Accuracy 0.9533
+Epoch 11 | Step 6600 | Loss 0.1266 | Accuracy 0.9531
+Epoch 11 | Step 6700 | Loss 0.1270 | Accuracy 0.9529
+Epoch 11 | Step 6800 | Loss 0.1274 | Accuracy 0.9528
+Epoch 11 | Step 6900 | Loss 0.1278 | Accuracy 0.9526
+Epoch 11 | Step 7000 | Loss 0.1281 | Accuracy 0.9524
+Epoch 11 | Step 7100 | Loss 0.1285 | Accuracy 0.9523
+  0%|          | 0/7172 [45:04<?, ?it/s]
+EPOCH: 11, LOSS: 0.1287, ACC: 0.9523, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 05:08:17 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 12 | Step 0 | Loss 1.1167 | Accuracy 0.6267
+Epoch 12 | Step 100 | Loss 0.0356 | Accuracy 0.9890
+Epoch 12 | Step 200 | Loss 0.0242 | Accuracy 0.9927
+Epoch 12 | Step 300 | Loss 0.0211 | Accuracy 0.9936
+Epoch 12 | Step 400 | Loss 0.0214 | Accuracy 0.9935
+Epoch 12 | Step 500 | Loss 0.0221 | Accuracy 0.9933
+Epoch 12 | Step 600 | Loss 0.0232 | Accuracy 0.9929
+Epoch 12 | Step 700 | Loss 0.0248 | Accuracy 0.9924
+Epoch 12 | Step 800 | Loss 0.0262 | Accuracy 0.9919
+Epoch 12 | Step 900 | Loss 0.0280 | Accuracy 0.9913
+Epoch 12 | Step 1000 | Loss 0.0297 | Accuracy 0.9907
+Epoch 12 | Step 1100 | Loss 0.0316 | Accuracy 0.9901
+Epoch 12 | Step 1200 | Loss 0.0338 | Accuracy 0.9893
+Epoch 12 | Step 1300 | Loss 0.0359 | Accuracy 0.9886
+Epoch 12 | Step 1400 | Loss 0.0378 | Accuracy 0.9879
+Epoch 12 | Step 1500 | Loss 0.0399 | Accuracy 0.9872
+Epoch 12 | Step 1600 | Loss 0.0423 | Accuracy 0.9864
+Epoch 12 | Step 1700 | Loss 0.0446 | Accuracy 0.9856
+Epoch 12 | Step 1800 | Loss 0.0471 | Accuracy 0.9847
+Epoch 12 | Step 1900 | Loss 0.0494 | Accuracy 0.9839
+Epoch 12 | Step 2000 | Loss 0.0520 | Accuracy 0.9830
+Epoch 12 | Step 2100 | Loss 0.0543 | Accuracy 0.9822
+Epoch 12 | Step 2200 | Loss 0.0571 | Accuracy 0.9812
+Epoch 12 | Step 2300 | Loss 0.0594 | Accuracy 0.9804
+Epoch 12 | Step 2400 | Loss 0.0617 | Accuracy 0.9796
+Epoch 12 | Step 2500 | Loss 0.0643 | Accuracy 0.9786
+Epoch 12 | Step 2600 | Loss 0.0667 | Accuracy 0.9777
+Epoch 12 | Step 2700 | Loss 0.0692 | Accuracy 0.9768
+Epoch 12 | Step 2800 | Loss 0.0715 | Accuracy 0.9759
+Epoch 12 | Step 2900 | Loss 0.0739 | Accuracy 0.9750
+Epoch 12 | Step 3000 | Loss 0.0762 | Accuracy 0.9741
+Epoch 12 | Step 3100 | Loss 0.0784 | Accuracy 0.9733
+Epoch 12 | Step 3200 | Loss 0.0807 | Accuracy 0.9723
+Epoch 12 | Step 3300 | Loss 0.0829 | Accuracy 0.9715
+Epoch 12 | Step 3400 | Loss 0.0848 | Accuracy 0.9707
+Epoch 12 | Step 3500 | Loss 0.0869 | Accuracy 0.9698
+Epoch 12 | Step 3600 | Loss 0.0888 | Accuracy 0.9691
+Epoch 12 | Step 3700 | Loss 0.0906 | Accuracy 0.9683
+Epoch 12 | Step 3800 | Loss 0.0925 | Accuracy 0.9675
+Epoch 12 | Step 3900 | Loss 0.0943 | Accuracy 0.9667
+Epoch 12 | Step 4000 | Loss 0.0960 | Accuracy 0.9660
+Epoch 12 | Step 4100 | Loss 0.0976 | Accuracy 0.9653
+Epoch 12 | Step 4200 | Loss 0.0992 | Accuracy 0.9646
+Epoch 12 | Step 4300 | Loss 0.1007 | Accuracy 0.9640
+Epoch 12 | Step 4400 | Loss 0.1021 | Accuracy 0.9634
+Epoch 12 | Step 4500 | Loss 0.1035 | Accuracy 0.9627
+Epoch 12 | Step 4600 | Loss 0.1048 | Accuracy 0.9622
+Epoch 12 | Step 4700 | Loss 0.1061 | Accuracy 0.9616
+Epoch 12 | Step 4800 | Loss 0.1073 | Accuracy 0.9611
+Epoch 12 | Step 4900 | Loss 0.1083 | Accuracy 0.9606
+Epoch 12 | Step 5000 | Loss 0.1095 | Accuracy 0.9602
+Epoch 12 | Step 5100 | Loss 0.1105 | Accuracy 0.9597
+Epoch 12 | Step 5200 | Loss 0.1114 | Accuracy 0.9593
+Epoch 12 | Step 5300 | Loss 0.1123 | Accuracy 0.9589
+Epoch 12 | Step 5400 | Loss 0.1131 | Accuracy 0.9586
+Epoch 12 | Step 5500 | Loss 0.1139 | Accuracy 0.9582
+Epoch 12 | Step 5600 | Loss 0.1147 | Accuracy 0.9579
+Epoch 12 | Step 5700 | Loss 0.1154 | Accuracy 0.9576
+Epoch 12 | Step 5800 | Loss 0.1161 | Accuracy 0.9573
+Epoch 12 | Step 5900 | Loss 0.1168 | Accuracy 0.9570
+Epoch 12 | Step 6000 | Loss 0.1175 | Accuracy 0.9567
+Epoch 12 | Step 6100 | Loss 0.1181 | Accuracy 0.9564
+Epoch 12 | Step 6200 | Loss 0.1187 | Accuracy 0.9562
+Epoch 12 | Step 6300 | Loss 0.1192 | Accuracy 0.9560
+Epoch 12 | Step 6400 | Loss 0.1197 | Accuracy 0.9558
+Epoch 12 | Step 6500 | Loss 0.1202 | Accuracy 0.9556
+Epoch 12 | Step 6600 | Loss 0.1206 | Accuracy 0.9554
+Epoch 12 | Step 6700 | Loss 0.1210 | Accuracy 0.9552
+Epoch 12 | Step 6800 | Loss 0.1215 | Accuracy 0.9550
+Epoch 12 | Step 6900 | Loss 0.1219 | Accuracy 0.9548
+Epoch 12 | Step 7000 | Loss 0.1222 | Accuracy 0.9547
+Epoch 12 | Step 7100 | Loss 0.1225 | Accuracy 0.9545
+  0%|          | 0/7172 [46:21<?, ?it/s]
+EPOCH: 12, LOSS: 0.1228, ACC: 0.9546, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 05:54:38 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 13 | Step 0 | Loss 1.0907 | Accuracy 0.6420
+Epoch 13 | Step 100 | Loss 0.0322 | Accuracy 0.9900
+Epoch 13 | Step 200 | Loss 0.0218 | Accuracy 0.9934
+Epoch 13 | Step 300 | Loss 0.0196 | Accuracy 0.9941
+Epoch 13 | Step 400 | Loss 0.0194 | Accuracy 0.9941
+Epoch 13 | Step 500 | Loss 0.0200 | Accuracy 0.9939
+Epoch 13 | Step 600 | Loss 0.0209 | Accuracy 0.9936
+Epoch 13 | Step 700 | Loss 0.0225 | Accuracy 0.9930
+Epoch 13 | Step 800 | Loss 0.0244 | Accuracy 0.9924
+Epoch 13 | Step 900 | Loss 0.0261 | Accuracy 0.9918
+Epoch 13 | Step 1000 | Loss 0.0276 | Accuracy 0.9913
+Epoch 13 | Step 1100 | Loss 0.0295 | Accuracy 0.9907
+Epoch 13 | Step 1200 | Loss 0.0319 | Accuracy 0.9899
+Epoch 13 | Step 1300 | Loss 0.0337 | Accuracy 0.9893
+Epoch 13 | Step 1400 | Loss 0.0359 | Accuracy 0.9885
+Epoch 13 | Step 1500 | Loss 0.0382 | Accuracy 0.9877
+Epoch 13 | Step 1600 | Loss 0.0402 | Accuracy 0.9870
+Epoch 13 | Step 1700 | Loss 0.0423 | Accuracy 0.9863
+Epoch 13 | Step 1800 | Loss 0.0446 | Accuracy 0.9855
+Epoch 13 | Step 1900 | Loss 0.0470 | Accuracy 0.9847
+Epoch 13 | Step 2000 | Loss 0.0494 | Accuracy 0.9838
+Epoch 13 | Step 2100 | Loss 0.0516 | Accuracy 0.9830
+Epoch 13 | Step 2200 | Loss 0.0540 | Accuracy 0.9822
+Epoch 13 | Step 2300 | Loss 0.0564 | Accuracy 0.9813
+Epoch 13 | Step 2400 | Loss 0.0586 | Accuracy 0.9805
+Epoch 13 | Step 2500 | Loss 0.0609 | Accuracy 0.9797
+Epoch 13 | Step 2600 | Loss 0.0632 | Accuracy 0.9788
+Epoch 13 | Step 2700 | Loss 0.0654 | Accuracy 0.9780
+Epoch 13 | Step 2800 | Loss 0.0678 | Accuracy 0.9771
+Epoch 13 | Step 2900 | Loss 0.0699 | Accuracy 0.9763
+Epoch 13 | Step 3000 | Loss 0.0721 | Accuracy 0.9755
+Epoch 13 | Step 3100 | Loss 0.0743 | Accuracy 0.9746
+Epoch 13 | Step 3200 | Loss 0.0763 | Accuracy 0.9739
+Epoch 13 | Step 3300 | Loss 0.0785 | Accuracy 0.9730
+Epoch 13 | Step 3400 | Loss 0.0803 | Accuracy 0.9722
+Epoch 13 | Step 3500 | Loss 0.0822 | Accuracy 0.9715
+Epoch 13 | Step 3600 | Loss 0.0841 | Accuracy 0.9707
+Epoch 13 | Step 3700 | Loss 0.0859 | Accuracy 0.9699
+Epoch 13 | Step 3800 | Loss 0.0876 | Accuracy 0.9692
+Epoch 13 | Step 3900 | Loss 0.0894 | Accuracy 0.9685
+Epoch 13 | Step 4000 | Loss 0.0910 | Accuracy 0.9678
+Epoch 13 | Step 4100 | Loss 0.0925 | Accuracy 0.9671
+Epoch 13 | Step 4200 | Loss 0.0941 | Accuracy 0.9664
+Epoch 13 | Step 4300 | Loss 0.0956 | Accuracy 0.9658
+Epoch 13 | Step 4400 | Loss 0.0970 | Accuracy 0.9652
+Epoch 13 | Step 4500 | Loss 0.0983 | Accuracy 0.9646
+Epoch 13 | Step 4600 | Loss 0.0996 | Accuracy 0.9641
+Epoch 13 | Step 4700 | Loss 0.1009 | Accuracy 0.9635
+Epoch 13 | Step 4800 | Loss 0.1021 | Accuracy 0.9630
+Epoch 13 | Step 4900 | Loss 0.1032 | Accuracy 0.9625
+Epoch 13 | Step 5000 | Loss 0.1043 | Accuracy 0.9620
+Epoch 13 | Step 5100 | Loss 0.1053 | Accuracy 0.9616
+Epoch 13 | Step 5200 | Loss 0.1063 | Accuracy 0.9612
+Epoch 13 | Step 5300 | Loss 0.1071 | Accuracy 0.9608
+Epoch 13 | Step 5400 | Loss 0.1079 | Accuracy 0.9605
+Epoch 13 | Step 5500 | Loss 0.1087 | Accuracy 0.9601
+Epoch 13 | Step 5600 | Loss 0.1095 | Accuracy 0.9598
+Epoch 13 | Step 5700 | Loss 0.1103 | Accuracy 0.9595
+Epoch 13 | Step 5800 | Loss 0.1110 | Accuracy 0.9592
+Epoch 13 | Step 5900 | Loss 0.1116 | Accuracy 0.9589
+Epoch 13 | Step 6000 | Loss 0.1122 | Accuracy 0.9586
+Epoch 13 | Step 6100 | Loss 0.1129 | Accuracy 0.9583
+Epoch 13 | Step 6200 | Loss 0.1134 | Accuracy 0.9581
+Epoch 13 | Step 6300 | Loss 0.1139 | Accuracy 0.9579
+Epoch 13 | Step 6400 | Loss 0.1144 | Accuracy 0.9577
+Epoch 13 | Step 6500 | Loss 0.1149 | Accuracy 0.9575
+Epoch 13 | Step 6600 | Loss 0.1153 | Accuracy 0.9573
+Epoch 13 | Step 6700 | Loss 0.1157 | Accuracy 0.9571
+Epoch 13 | Step 6800 | Loss 0.1161 | Accuracy 0.9569
+Epoch 13 | Step 6900 | Loss 0.1165 | Accuracy 0.9568
+Epoch 13 | Step 7000 | Loss 0.1168 | Accuracy 0.9566
+Epoch 13 | Step 7100 | Loss 0.1172 | Accuracy 0.9565
+  0%|          | 0/7172 [47:00<?, ?it/s]
+EPOCH: 13, LOSS: 0.1174, ACC: 0.9565, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 06:41:39 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 14 | Step 0 | Loss 1.0998 | Accuracy 0.6493
+Epoch 14 | Step 100 | Loss 0.0317 | Accuracy 0.9903
+Epoch 14 | Step 200 | Loss 0.0216 | Accuracy 0.9936
+Epoch 14 | Step 300 | Loss 0.0189 | Accuracy 0.9944
+Epoch 14 | Step 400 | Loss 0.0188 | Accuracy 0.9944
+Epoch 14 | Step 500 | Loss 0.0189 | Accuracy 0.9943
+Epoch 14 | Step 600 | Loss 0.0199 | Accuracy 0.9939
+Epoch 14 | Step 700 | Loss 0.0213 | Accuracy 0.9934
+Epoch 14 | Step 800 | Loss 0.0228 | Accuracy 0.9929
+Epoch 14 | Step 900 | Loss 0.0245 | Accuracy 0.9923
+Epoch 14 | Step 1000 | Loss 0.0262 | Accuracy 0.9918
+Epoch 14 | Step 1100 | Loss 0.0279 | Accuracy 0.9912
+Epoch 14 | Step 1200 | Loss 0.0300 | Accuracy 0.9904
+Epoch 14 | Step 1300 | Loss 0.0319 | Accuracy 0.9898
+Epoch 14 | Step 1400 | Loss 0.0339 | Accuracy 0.9891
+Epoch 14 | Step 1500 | Loss 0.0358 | Accuracy 0.9885
+Epoch 14 | Step 1600 | Loss 0.0379 | Accuracy 0.9877
+Epoch 14 | Step 1700 | Loss 0.0399 | Accuracy 0.9871
+Epoch 14 | Step 1800 | Loss 0.0425 | Accuracy 0.9862
+Epoch 14 | Step 1900 | Loss 0.0449 | Accuracy 0.9853
+Epoch 14 | Step 2000 | Loss 0.0474 | Accuracy 0.9845
+Epoch 14 | Step 2100 | Loss 0.0494 | Accuracy 0.9838
+Epoch 14 | Step 2200 | Loss 0.0515 | Accuracy 0.9830
+Epoch 14 | Step 2300 | Loss 0.0538 | Accuracy 0.9822
+Epoch 14 | Step 2400 | Loss 0.0561 | Accuracy 0.9814
+Epoch 14 | Step 2500 | Loss 0.0585 | Accuracy 0.9805
+Epoch 14 | Step 2600 | Loss 0.0607 | Accuracy 0.9797
+Epoch 14 | Step 2700 | Loss 0.0629 | Accuracy 0.9789
+Epoch 14 | Step 2800 | Loss 0.0650 | Accuracy 0.9781
+Epoch 14 | Step 2900 | Loss 0.0671 | Accuracy 0.9773
+Epoch 14 | Step 3000 | Loss 0.0691 | Accuracy 0.9765
+Epoch 14 | Step 3100 | Loss 0.0714 | Accuracy 0.9757
+Epoch 14 | Step 3200 | Loss 0.0734 | Accuracy 0.9749
+Epoch 14 | Step 3300 | Loss 0.0753 | Accuracy 0.9741
+Epoch 14 | Step 3400 | Loss 0.0772 | Accuracy 0.9733
+Epoch 14 | Step 3500 | Loss 0.0790 | Accuracy 0.9726
+Epoch 14 | Step 3600 | Loss 0.0809 | Accuracy 0.9719
+Epoch 14 | Step 3700 | Loss 0.0826 | Accuracy 0.9711
+Epoch 14 | Step 3800 | Loss 0.0843 | Accuracy 0.9704
+Epoch 14 | Step 3900 | Loss 0.0859 | Accuracy 0.9697
+Epoch 14 | Step 4000 | Loss 0.0875 | Accuracy 0.9690
+Epoch 14 | Step 4100 | Loss 0.0890 | Accuracy 0.9684
+Epoch 14 | Step 4200 | Loss 0.0905 | Accuracy 0.9677
+Epoch 14 | Step 4300 | Loss 0.0919 | Accuracy 0.9672
+Epoch 14 | Step 4400 | Loss 0.0932 | Accuracy 0.9666
+Epoch 14 | Step 4500 | Loss 0.0945 | Accuracy 0.9660
+Epoch 14 | Step 4600 | Loss 0.0958 | Accuracy 0.9655
+Epoch 14 | Step 4700 | Loss 0.0970 | Accuracy 0.9649
+Epoch 14 | Step 4800 | Loss 0.0982 | Accuracy 0.9644
+Epoch 14 | Step 4900 | Loss 0.0993 | Accuracy 0.9639
+Epoch 14 | Step 5000 | Loss 0.1003 | Accuracy 0.9635
+Epoch 14 | Step 5100 | Loss 0.1012 | Accuracy 0.9631
+Epoch 14 | Step 5200 | Loss 0.1021 | Accuracy 0.9627
+Epoch 14 | Step 5300 | Loss 0.1029 | Accuracy 0.9624
+Epoch 14 | Step 5400 | Loss 0.1038 | Accuracy 0.9620
+Epoch 14 | Step 5500 | Loss 0.1046 | Accuracy 0.9617
+Epoch 14 | Step 5600 | Loss 0.1053 | Accuracy 0.9613
+Epoch 14 | Step 5700 | Loss 0.1061 | Accuracy 0.9610
+Epoch 14 | Step 5800 | Loss 0.1069 | Accuracy 0.9607
+Epoch 14 | Step 5900 | Loss 0.1075 | Accuracy 0.9604
+Epoch 14 | Step 6000 | Loss 0.1081 | Accuracy 0.9602
+Epoch 14 | Step 6100 | Loss 0.1087 | Accuracy 0.9599
+Epoch 14 | Step 6200 | Loss 0.1093 | Accuracy 0.9597
+Epoch 14 | Step 6300 | Loss 0.1097 | Accuracy 0.9594
+Epoch 14 | Step 6400 | Loss 0.1102 | Accuracy 0.9592
+Epoch 14 | Step 6500 | Loss 0.1106 | Accuracy 0.9591
+Epoch 14 | Step 6600 | Loss 0.1111 | Accuracy 0.9589
+Epoch 14 | Step 6700 | Loss 0.1115 | Accuracy 0.9587
+Epoch 14 | Step 6800 | Loss 0.1119 | Accuracy 0.9585
+Epoch 14 | Step 6900 | Loss 0.1122 | Accuracy 0.9584
+Epoch 14 | Step 7000 | Loss 0.1125 | Accuracy 0.9582
+Epoch 14 | Step 7100 | Loss 0.1128 | Accuracy 0.9581
+  0%|          | 0/7172 [45:55<?, ?it/s]
+EPOCH: 14, LOSS: 0.1131, ACC: 0.9582, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 07:27:34 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 15 | Step 0 | Loss 1.0596 | Accuracy 0.6577
+Epoch 15 | Step 100 | Loss 0.0308 | Accuracy 0.9904
+Epoch 15 | Step 200 | Loss 0.0205 | Accuracy 0.9938
+Epoch 15 | Step 300 | Loss 0.0181 | Accuracy 0.9945
+Epoch 15 | Step 400 | Loss 0.0178 | Accuracy 0.9946
+Epoch 15 | Step 500 | Loss 0.0182 | Accuracy 0.9944
+Epoch 15 | Step 600 | Loss 0.0191 | Accuracy 0.9941
+Epoch 15 | Step 700 | Loss 0.0206 | Accuracy 0.9936
+Epoch 15 | Step 800 | Loss 0.0217 | Accuracy 0.9932
+Epoch 15 | Step 900 | Loss 0.0233 | Accuracy 0.9927
+Epoch 15 | Step 1000 | Loss 0.0252 | Accuracy 0.9921
+Epoch 15 | Step 1100 | Loss 0.0265 | Accuracy 0.9917
+Epoch 15 | Step 1200 | Loss 0.0282 | Accuracy 0.9911
+Epoch 15 | Step 1300 | Loss 0.0301 | Accuracy 0.9904
+Epoch 15 | Step 1400 | Loss 0.0322 | Accuracy 0.9897
+Epoch 15 | Step 1500 | Loss 0.0340 | Accuracy 0.9891
+Epoch 15 | Step 1600 | Loss 0.0362 | Accuracy 0.9883
+Epoch 15 | Step 1700 | Loss 0.0383 | Accuracy 0.9876
+Epoch 15 | Step 1800 | Loss 0.0405 | Accuracy 0.9868
+Epoch 15 | Step 1900 | Loss 0.0426 | Accuracy 0.9861
+Epoch 15 | Step 2000 | Loss 0.0447 | Accuracy 0.9853
+Epoch 15 | Step 2100 | Loss 0.0469 | Accuracy 0.9846
+Epoch 15 | Step 2200 | Loss 0.0490 | Accuracy 0.9838
+Epoch 15 | Step 2300 | Loss 0.0511 | Accuracy 0.9831
+Epoch 15 | Step 2400 | Loss 0.0533 | Accuracy 0.9823
+Epoch 15 | Step 2500 | Loss 0.0558 | Accuracy 0.9814
+Epoch 15 | Step 2600 | Loss 0.0582 | Accuracy 0.9805
+Epoch 15 | Step 2700 | Loss 0.0605 | Accuracy 0.9796
+Epoch 15 | Step 2800 | Loss 0.0628 | Accuracy 0.9787
+Epoch 15 | Step 2900 | Loss 0.0647 | Accuracy 0.9780
+Epoch 15 | Step 3000 | Loss 0.0667 | Accuracy 0.9773
+Epoch 15 | Step 3100 | Loss 0.0687 | Accuracy 0.9765
+Epoch 15 | Step 3200 | Loss 0.0706 | Accuracy 0.9758
+Epoch 15 | Step 3300 | Loss 0.0724 | Accuracy 0.9751
+Epoch 15 | Step 3400 | Loss 0.0741 | Accuracy 0.9744
+Epoch 15 | Step 3500 | Loss 0.0761 | Accuracy 0.9736
+Epoch 15 | Step 3600 | Loss 0.0779 | Accuracy 0.9728
+Epoch 15 | Step 3700 | Loss 0.0796 | Accuracy 0.9721
+Epoch 15 | Step 3800 | Loss 0.0812 | Accuracy 0.9714
+Epoch 15 | Step 3900 | Loss 0.0828 | Accuracy 0.9708
+Epoch 15 | Step 4000 | Loss 0.0844 | Accuracy 0.9701
+Epoch 15 | Step 4100 | Loss 0.0859 | Accuracy 0.9695
+Epoch 15 | Step 4200 | Loss 0.0874 | Accuracy 0.9688
+Epoch 15 | Step 4300 | Loss 0.0888 | Accuracy 0.9682
+Epoch 15 | Step 4400 | Loss 0.0901 | Accuracy 0.9676
+Epoch 15 | Step 4500 | Loss 0.0915 | Accuracy 0.9671
+Epoch 15 | Step 4600 | Loss 0.0926 | Accuracy 0.9666
+Epoch 15 | Step 4700 | Loss 0.0938 | Accuracy 0.9661
+Epoch 15 | Step 4800 | Loss 0.0948 | Accuracy 0.9656
+Epoch 15 | Step 4900 | Loss 0.0959 | Accuracy 0.9651
+Epoch 15 | Step 5000 | Loss 0.0969 | Accuracy 0.9647
+Epoch 15 | Step 5100 | Loss 0.0979 | Accuracy 0.9643
+Epoch 15 | Step 5200 | Loss 0.0988 | Accuracy 0.9639
+Epoch 15 | Step 5300 | Loss 0.0996 | Accuracy 0.9636
+Epoch 15 | Step 5400 | Loss 0.1005 | Accuracy 0.9632
+Epoch 15 | Step 5500 | Loss 0.1013 | Accuracy 0.9629
+Epoch 15 | Step 5600 | Loss 0.1020 | Accuracy 0.9625
+Epoch 15 | Step 5700 | Loss 0.1027 | Accuracy 0.9622
+Epoch 15 | Step 5800 | Loss 0.1034 | Accuracy 0.9620
+Epoch 15 | Step 5900 | Loss 0.1040 | Accuracy 0.9617
+Epoch 15 | Step 6000 | Loss 0.1046 | Accuracy 0.9614
+Epoch 15 | Step 6100 | Loss 0.1052 | Accuracy 0.9612
+Epoch 15 | Step 6200 | Loss 0.1057 | Accuracy 0.9610
+Epoch 15 | Step 6300 | Loss 0.1062 | Accuracy 0.9607
+Epoch 15 | Step 6400 | Loss 0.1067 | Accuracy 0.9605
+Epoch 15 | Step 6500 | Loss 0.1072 | Accuracy 0.9603
+Epoch 15 | Step 6600 | Loss 0.1076 | Accuracy 0.9601
+Epoch 15 | Step 6700 | Loss 0.1081 | Accuracy 0.9599
+Epoch 15 | Step 6800 | Loss 0.1085 | Accuracy 0.9598
+Epoch 15 | Step 6900 | Loss 0.1089 | Accuracy 0.9596
+Epoch 15 | Step 7000 | Loss 0.1092 | Accuracy 0.9594
+Epoch 15 | Step 7100 | Loss 0.1095 | Accuracy 0.9593
+  0%|          | 0/7172 [46:24<?, ?it/s]
+EPOCH: 15, LOSS: 0.1098, ACC: 0.9593, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 08:13:59 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 16 | Step 0 | Loss 1.0305 | Accuracy 0.6581
+Epoch 16 | Step 100 | Loss 0.0306 | Accuracy 0.9906
+Epoch 16 | Step 200 | Loss 0.0199 | Accuracy 0.9940
+Epoch 16 | Step 300 | Loss 0.0172 | Accuracy 0.9948
+Epoch 16 | Step 400 | Loss 0.0171 | Accuracy 0.9948
+Epoch 16 | Step 500 | Loss 0.0175 | Accuracy 0.9947
+Epoch 16 | Step 600 | Loss 0.0184 | Accuracy 0.9943
+Epoch 16 | Step 700 | Loss 0.0200 | Accuracy 0.9938
+Epoch 16 | Step 800 | Loss 0.0215 | Accuracy 0.9933
+Epoch 16 | Step 900 | Loss 0.0229 | Accuracy 0.9928
+Epoch 16 | Step 1000 | Loss 0.0244 | Accuracy 0.9923
+Epoch 16 | Step 1100 | Loss 0.0264 | Accuracy 0.9917
+Epoch 16 | Step 1200 | Loss 0.0279 | Accuracy 0.9911
+Epoch 16 | Step 1300 | Loss 0.0295 | Accuracy 0.9906
+Epoch 16 | Step 1400 | Loss 0.0316 | Accuracy 0.9899
+Epoch 16 | Step 1500 | Loss 0.0336 | Accuracy 0.9892
+Epoch 16 | Step 1600 | Loss 0.0355 | Accuracy 0.9885
+Epoch 16 | Step 1700 | Loss 0.0375 | Accuracy 0.9879
+Epoch 16 | Step 1800 | Loss 0.0396 | Accuracy 0.9871
+Epoch 16 | Step 1900 | Loss 0.0419 | Accuracy 0.9863
+Epoch 16 | Step 2000 | Loss 0.0438 | Accuracy 0.9856
+Epoch 16 | Step 2100 | Loss 0.0456 | Accuracy 0.9850
+Epoch 16 | Step 2200 | Loss 0.0475 | Accuracy 0.9843
+Epoch 16 | Step 2300 | Loss 0.0494 | Accuracy 0.9836
+Epoch 16 | Step 2400 | Loss 0.0517 | Accuracy 0.9828
+Epoch 16 | Step 2500 | Loss 0.0538 | Accuracy 0.9821
+Epoch 16 | Step 2600 | Loss 0.0561 | Accuracy 0.9813
+Epoch 16 | Step 2700 | Loss 0.0581 | Accuracy 0.9805
+Epoch 16 | Step 2800 | Loss 0.0601 | Accuracy 0.9797
+Epoch 16 | Step 2900 | Loss 0.0621 | Accuracy 0.9790
+Epoch 16 | Step 3000 | Loss 0.0640 | Accuracy 0.9783
+Epoch 16 | Step 3100 | Loss 0.0659 | Accuracy 0.9775
+Epoch 16 | Step 3200 | Loss 0.0679 | Accuracy 0.9768
+Epoch 16 | Step 3300 | Loss 0.0699 | Accuracy 0.9760
+Epoch 16 | Step 3400 | Loss 0.0717 | Accuracy 0.9752
+Epoch 16 | Step 3500 | Loss 0.0734 | Accuracy 0.9746
+Epoch 16 | Step 3600 | Loss 0.0753 | Accuracy 0.9738
+Epoch 16 | Step 3700 | Loss 0.0771 | Accuracy 0.9730
+Epoch 16 | Step 3800 | Loss 0.0787 | Accuracy 0.9724
+Epoch 16 | Step 3900 | Loss 0.0803 | Accuracy 0.9717
+Epoch 16 | Step 4000 | Loss 0.0818 | Accuracy 0.9710
+Epoch 16 | Step 4100 | Loss 0.0833 | Accuracy 0.9704
+Epoch 16 | Step 4200 | Loss 0.0847 | Accuracy 0.9698
+Epoch 16 | Step 4300 | Loss 0.0860 | Accuracy 0.9692
+Epoch 16 | Step 4400 | Loss 0.0874 | Accuracy 0.9686
+Epoch 16 | Step 4500 | Loss 0.0887 | Accuracy 0.9681
+Epoch 16 | Step 4600 | Loss 0.0899 | Accuracy 0.9675
+Epoch 16 | Step 4700 | Loss 0.0912 | Accuracy 0.9670
+Epoch 16 | Step 4800 | Loss 0.0923 | Accuracy 0.9665
+Epoch 16 | Step 4900 | Loss 0.0934 | Accuracy 0.9661
+Epoch 16 | Step 5000 | Loss 0.0944 | Accuracy 0.9656
+Epoch 16 | Step 5100 | Loss 0.0953 | Accuracy 0.9652
+Epoch 16 | Step 5200 | Loss 0.0962 | Accuracy 0.9648
+Epoch 16 | Step 5300 | Loss 0.0971 | Accuracy 0.9645
+Epoch 16 | Step 5400 | Loss 0.0980 | Accuracy 0.9641
+Epoch 16 | Step 5500 | Loss 0.0988 | Accuracy 0.9637
+Epoch 16 | Step 5600 | Loss 0.0995 | Accuracy 0.9634
+Epoch 16 | Step 5700 | Loss 0.1001 | Accuracy 0.9632
+Epoch 16 | Step 5800 | Loss 0.1007 | Accuracy 0.9629
+Epoch 16 | Step 5900 | Loss 0.1014 | Accuracy 0.9626
+Epoch 16 | Step 6000 | Loss 0.1020 | Accuracy 0.9624
+Epoch 16 | Step 6100 | Loss 0.1025 | Accuracy 0.9621
+Epoch 16 | Step 6200 | Loss 0.1031 | Accuracy 0.9619
+Epoch 16 | Step 6300 | Loss 0.1036 | Accuracy 0.9617
+Epoch 16 | Step 6400 | Loss 0.1041 | Accuracy 0.9615
+Epoch 16 | Step 6500 | Loss 0.1045 | Accuracy 0.9613
+Epoch 16 | Step 6600 | Loss 0.1049 | Accuracy 0.9611
+Epoch 16 | Step 6700 | Loss 0.1054 | Accuracy 0.9609
+Epoch 16 | Step 6800 | Loss 0.1057 | Accuracy 0.9608
+Epoch 16 | Step 6900 | Loss 0.1061 | Accuracy 0.9606
+Epoch 16 | Step 7000 | Loss 0.1064 | Accuracy 0.9605
+Epoch 16 | Step 7100 | Loss 0.1067 | Accuracy 0.9603
+  0%|          | 0/7172 [49:12<?, ?it/s]
+EPOCH: 16, LOSS: 0.1069, ACC: 0.9604, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 09:03:12 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 17 | Step 0 | Loss 1.0628 | Accuracy 0.6733
+Epoch 17 | Step 100 | Loss 0.0305 | Accuracy 0.9906
+Epoch 17 | Step 200 | Loss 0.0200 | Accuracy 0.9939
+Epoch 17 | Step 300 | Loss 0.0171 | Accuracy 0.9949
+Epoch 17 | Step 400 | Loss 0.0164 | Accuracy 0.9950
+Epoch 17 | Step 500 | Loss 0.0168 | Accuracy 0.9949
+Epoch 17 | Step 600 | Loss 0.0174 | Accuracy 0.9946
+Epoch 17 | Step 700 | Loss 0.0186 | Accuracy 0.9942
+Epoch 17 | Step 800 | Loss 0.0203 | Accuracy 0.9937
+Epoch 17 | Step 900 | Loss 0.0219 | Accuracy 0.9931
+Epoch 17 | Step 1000 | Loss 0.0236 | Accuracy 0.9926
+Epoch 17 | Step 1100 | Loss 0.0250 | Accuracy 0.9921
+Epoch 17 | Step 1200 | Loss 0.0268 | Accuracy 0.9915
+Epoch 17 | Step 1300 | Loss 0.0285 | Accuracy 0.9909
+Epoch 17 | Step 1400 | Loss 0.0303 | Accuracy 0.9903
+Epoch 17 | Step 1500 | Loss 0.0322 | Accuracy 0.9896
+Epoch 17 | Step 1600 | Loss 0.0340 | Accuracy 0.9890
+Epoch 17 | Step 1700 | Loss 0.0359 | Accuracy 0.9883
+Epoch 17 | Step 1800 | Loss 0.0375 | Accuracy 0.9878
+Epoch 17 | Step 1900 | Loss 0.0400 | Accuracy 0.9869
+Epoch 17 | Step 2000 | Loss 0.0420 | Accuracy 0.9862
+Epoch 17 | Step 2100 | Loss 0.0440 | Accuracy 0.9855
+Epoch 17 | Step 2200 | Loss 0.0460 | Accuracy 0.9848
+Epoch 17 | Step 2300 | Loss 0.0481 | Accuracy 0.9840
+Epoch 17 | Step 2400 | Loss 0.0504 | Accuracy 0.9832
+Epoch 17 | Step 2500 | Loss 0.0526 | Accuracy 0.9824
+Epoch 17 | Step 2600 | Loss 0.0548 | Accuracy 0.9816
+Epoch 17 | Step 2700 | Loss 0.0567 | Accuracy 0.9809
+Epoch 17 | Step 2800 | Loss 0.0586 | Accuracy 0.9802
+Epoch 17 | Step 2900 | Loss 0.0606 | Accuracy 0.9794
+Epoch 17 | Step 3000 | Loss 0.0627 | Accuracy 0.9786
+Epoch 17 | Step 3100 | Loss 0.0646 | Accuracy 0.9779
+Epoch 17 | Step 3200 | Loss 0.0666 | Accuracy 0.9771
+Epoch 17 | Step 3300 | Loss 0.0684 | Accuracy 0.9764
+Epoch 17 | Step 3400 | Loss 0.0702 | Accuracy 0.9757
+Epoch 17 | Step 3500 | Loss 0.0719 | Accuracy 0.9750
+Epoch 17 | Step 3600 | Loss 0.0736 | Accuracy 0.9743
+Epoch 17 | Step 3700 | Loss 0.0753 | Accuracy 0.9736
+Epoch 17 | Step 3800 | Loss 0.0769 | Accuracy 0.9729
+Epoch 17 | Step 3900 | Loss 0.0785 | Accuracy 0.9723
+Epoch 17 | Step 4000 | Loss 0.0800 | Accuracy 0.9716
+Epoch 17 | Step 4100 | Loss 0.0813 | Accuracy 0.9710
+Epoch 17 | Step 4200 | Loss 0.0827 | Accuracy 0.9705
+Epoch 17 | Step 4300 | Loss 0.0840 | Accuracy 0.9699
+Epoch 17 | Step 4400 | Loss 0.0852 | Accuracy 0.9694
+Epoch 17 | Step 4500 | Loss 0.0863 | Accuracy 0.9689
+Epoch 17 | Step 4600 | Loss 0.0875 | Accuracy 0.9684
+Epoch 17 | Step 4700 | Loss 0.0887 | Accuracy 0.9679
+Epoch 17 | Step 4800 | Loss 0.0898 | Accuracy 0.9674
+Epoch 17 | Step 4900 | Loss 0.0908 | Accuracy 0.9670
+Epoch 17 | Step 5000 | Loss 0.0918 | Accuracy 0.9665
+Epoch 17 | Step 5100 | Loss 0.0927 | Accuracy 0.9661
+Epoch 17 | Step 5200 | Loss 0.0936 | Accuracy 0.9658
+Epoch 17 | Step 5300 | Loss 0.0944 | Accuracy 0.9655
+Epoch 17 | Step 5400 | Loss 0.0952 | Accuracy 0.9651
+Epoch 17 | Step 5500 | Loss 0.0959 | Accuracy 0.9648
+Epoch 17 | Step 5600 | Loss 0.0966 | Accuracy 0.9645
+Epoch 17 | Step 5700 | Loss 0.0973 | Accuracy 0.9642
+Epoch 17 | Step 5800 | Loss 0.0979 | Accuracy 0.9639
+Epoch 17 | Step 5900 | Loss 0.0986 | Accuracy 0.9636
+Epoch 17 | Step 6000 | Loss 0.0992 | Accuracy 0.9634
+Epoch 17 | Step 6100 | Loss 0.0997 | Accuracy 0.9632
+Epoch 17 | Step 6200 | Loss 0.1003 | Accuracy 0.9629
+Epoch 17 | Step 6300 | Loss 0.1008 | Accuracy 0.9627
+Epoch 17 | Step 6400 | Loss 0.1012 | Accuracy 0.9625
+Epoch 17 | Step 6500 | Loss 0.1017 | Accuracy 0.9623
+Epoch 17 | Step 6600 | Loss 0.1021 | Accuracy 0.9621
+Epoch 17 | Step 6700 | Loss 0.1025 | Accuracy 0.9620
+Epoch 17 | Step 6800 | Loss 0.1029 | Accuracy 0.9618
+Epoch 17 | Step 6900 | Loss 0.1033 | Accuracy 0.9616
+Epoch 17 | Step 7000 | Loss 0.1036 | Accuracy 0.9615
+Epoch 17 | Step 7100 | Loss 0.1039 | Accuracy 0.9614
+  0%|          | 0/7172 [51:18<?, ?it/s]
+EPOCH: 17, LOSS: 0.1041, ACC: 0.9614, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 09:54:30 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 18 | Step 0 | Loss 1.0745 | Accuracy 0.6645
+Epoch 18 | Step 100 | Loss 0.0292 | Accuracy 0.9909
+Epoch 18 | Step 200 | Loss 0.0189 | Accuracy 0.9942
+Epoch 18 | Step 300 | Loss 0.0167 | Accuracy 0.9949
+Epoch 18 | Step 400 | Loss 0.0162 | Accuracy 0.9950
+Epoch 18 | Step 500 | Loss 0.0165 | Accuracy 0.9949
+Epoch 18 | Step 600 | Loss 0.0174 | Accuracy 0.9946
+Epoch 18 | Step 700 | Loss 0.0187 | Accuracy 0.9942
+Epoch 18 | Step 800 | Loss 0.0199 | Accuracy 0.9938
+Epoch 18 | Step 900 | Loss 0.0215 | Accuracy 0.9933
+Epoch 18 | Step 1000 | Loss 0.0230 | Accuracy 0.9928
+Epoch 18 | Step 1100 | Loss 0.0246 | Accuracy 0.9922
+Epoch 18 | Step 1200 | Loss 0.0260 | Accuracy 0.9917
+Epoch 18 | Step 1300 | Loss 0.0281 | Accuracy 0.9910
+Epoch 18 | Step 1400 | Loss 0.0300 | Accuracy 0.9904
+Epoch 18 | Step 1500 | Loss 0.0317 | Accuracy 0.9898
+Epoch 18 | Step 1600 | Loss 0.0334 | Accuracy 0.9892
+Epoch 18 | Step 1700 | Loss 0.0351 | Accuracy 0.9886
+Epoch 18 | Step 1800 | Loss 0.0372 | Accuracy 0.9879
+Epoch 18 | Step 1900 | Loss 0.0391 | Accuracy 0.9872
+Epoch 18 | Step 2000 | Loss 0.0413 | Accuracy 0.9864
+Epoch 18 | Step 2100 | Loss 0.0431 | Accuracy 0.9858
+Epoch 18 | Step 2200 | Loss 0.0449 | Accuracy 0.9851
+Epoch 18 | Step 2300 | Loss 0.0470 | Accuracy 0.9844
+Epoch 18 | Step 2400 | Loss 0.0492 | Accuracy 0.9837
+Epoch 18 | Step 2500 | Loss 0.0513 | Accuracy 0.9829
+Epoch 18 | Step 2600 | Loss 0.0532 | Accuracy 0.9822
+Epoch 18 | Step 2700 | Loss 0.0552 | Accuracy 0.9814
+Epoch 18 | Step 2800 | Loss 0.0573 | Accuracy 0.9807
+Epoch 18 | Step 2900 | Loss 0.0592 | Accuracy 0.9799
+Epoch 18 | Step 3000 | Loss 0.0612 | Accuracy 0.9792
+Epoch 18 | Step 3100 | Loss 0.0630 | Accuracy 0.9785
+Epoch 18 | Step 3200 | Loss 0.0650 | Accuracy 0.9777
+Epoch 18 | Step 3300 | Loss 0.0668 | Accuracy 0.9770
+Epoch 18 | Step 3400 | Loss 0.0686 | Accuracy 0.9763
+Epoch 18 | Step 3500 | Loss 0.0703 | Accuracy 0.9756
+Epoch 18 | Step 3600 | Loss 0.0719 | Accuracy 0.9749
+Epoch 18 | Step 3700 | Loss 0.0735 | Accuracy 0.9743
+Epoch 18 | Step 3800 | Loss 0.0750 | Accuracy 0.9736
+Epoch 18 | Step 3900 | Loss 0.0765 | Accuracy 0.9730
+Epoch 18 | Step 4000 | Loss 0.0779 | Accuracy 0.9724
+Epoch 18 | Step 4100 | Loss 0.0793 | Accuracy 0.9718
+Epoch 18 | Step 4200 | Loss 0.0806 | Accuracy 0.9713
+Epoch 18 | Step 4300 | Loss 0.0819 | Accuracy 0.9707
+Epoch 18 | Step 4400 | Loss 0.0832 | Accuracy 0.9702
+Epoch 18 | Step 4500 | Loss 0.0843 | Accuracy 0.9697
+Epoch 18 | Step 4600 | Loss 0.0854 | Accuracy 0.9692
+Epoch 18 | Step 4700 | Loss 0.0865 | Accuracy 0.9687
+Epoch 18 | Step 4800 | Loss 0.0875 | Accuracy 0.9683
+Epoch 18 | Step 4900 | Loss 0.0886 | Accuracy 0.9678
+Epoch 18 | Step 5000 | Loss 0.0895 | Accuracy 0.9674
+Epoch 18 | Step 5100 | Loss 0.0905 | Accuracy 0.9670
+Epoch 18 | Step 5200 | Loss 0.0915 | Accuracy 0.9666
+Epoch 18 | Step 5300 | Loss 0.0924 | Accuracy 0.9662
+Epoch 18 | Step 5400 | Loss 0.0931 | Accuracy 0.9659
+Epoch 18 | Step 5500 | Loss 0.0939 | Accuracy 0.9656
+Epoch 18 | Step 5600 | Loss 0.0946 | Accuracy 0.9652
+Epoch 18 | Step 5700 | Loss 0.0953 | Accuracy 0.9650
+Epoch 18 | Step 5800 | Loss 0.0959 | Accuracy 0.9647
+Epoch 18 | Step 5900 | Loss 0.0965 | Accuracy 0.9644
+Epoch 18 | Step 6000 | Loss 0.0970 | Accuracy 0.9642
+Epoch 18 | Step 6100 | Loss 0.0976 | Accuracy 0.9640
+Epoch 18 | Step 6200 | Loss 0.0981 | Accuracy 0.9637
+Epoch 18 | Step 6300 | Loss 0.0986 | Accuracy 0.9635
+Epoch 18 | Step 6400 | Loss 0.0991 | Accuracy 0.9633
+Epoch 18 | Step 6500 | Loss 0.0995 | Accuracy 0.9631
+Epoch 18 | Step 6600 | Loss 0.0999 | Accuracy 0.9630
+Epoch 18 | Step 6700 | Loss 0.1003 | Accuracy 0.9628
+Epoch 18 | Step 6800 | Loss 0.1006 | Accuracy 0.9626
+Epoch 18 | Step 6900 | Loss 0.1010 | Accuracy 0.9625
+Epoch 18 | Step 7000 | Loss 0.1014 | Accuracy 0.9623
+Epoch 18 | Step 7100 | Loss 0.1017 | Accuracy 0.9622
+  0%|          | 0/7172 [47:14<?, ?it/s]
+EPOCH: 18, LOSS: 0.1019, ACC: 0.9622, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 10:41:45 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 19 | Step 0 | Loss 1.0840 | Accuracy 0.6668
+Epoch 19 | Step 100 | Loss 0.0289 | Accuracy 0.9912
+Epoch 19 | Step 200 | Loss 0.0191 | Accuracy 0.9943
+Epoch 19 | Step 300 | Loss 0.0165 | Accuracy 0.9951
+Epoch 19 | Step 400 | Loss 0.0160 | Accuracy 0.9952
+Epoch 19 | Step 500 | Loss 0.0164 | Accuracy 0.9950
+Epoch 19 | Step 600 | Loss 0.0174 | Accuracy 0.9947
+Epoch 19 | Step 700 | Loss 0.0183 | Accuracy 0.9944
+Epoch 19 | Step 800 | Loss 0.0198 | Accuracy 0.9939
+Epoch 19 | Step 900 | Loss 0.0210 | Accuracy 0.9935
+Epoch 19 | Step 1000 | Loss 0.0221 | Accuracy 0.9930
+Epoch 19 | Step 1100 | Loss 0.0238 | Accuracy 0.9925
+Epoch 19 | Step 1200 | Loss 0.0253 | Accuracy 0.9920
+Epoch 19 | Step 1300 | Loss 0.0269 | Accuracy 0.9914
+Epoch 19 | Step 1400 | Loss 0.0284 | Accuracy 0.9909
+Epoch 19 | Step 1500 | Loss 0.0303 | Accuracy 0.9902
+Epoch 19 | Step 1600 | Loss 0.0320 | Accuracy 0.9897
+Epoch 19 | Step 1700 | Loss 0.0339 | Accuracy 0.9890
+Epoch 19 | Step 1800 | Loss 0.0358 | Accuracy 0.9883
+Epoch 19 | Step 1900 | Loss 0.0378 | Accuracy 0.9876
+Epoch 19 | Step 2000 | Loss 0.0398 | Accuracy 0.9869
+Epoch 19 | Step 2100 | Loss 0.0415 | Accuracy 0.9863
+Epoch 19 | Step 2200 | Loss 0.0433 | Accuracy 0.9857
+Epoch 19 | Step 2300 | Loss 0.0453 | Accuracy 0.9849
+Epoch 19 | Step 2400 | Loss 0.0473 | Accuracy 0.9842
+Epoch 19 | Step 2500 | Loss 0.0494 | Accuracy 0.9835
+Epoch 19 | Step 2600 | Loss 0.0515 | Accuracy 0.9827
+Epoch 19 | Step 2700 | Loss 0.0534 | Accuracy 0.9820
+Epoch 19 | Step 2800 | Loss 0.0556 | Accuracy 0.9812
+Epoch 19 | Step 2900 | Loss 0.0575 | Accuracy 0.9805
+Epoch 19 | Step 3000 | Loss 0.0593 | Accuracy 0.9798
+Epoch 19 | Step 3100 | Loss 0.0611 | Accuracy 0.9791
+Epoch 19 | Step 3200 | Loss 0.0629 | Accuracy 0.9784
+Epoch 19 | Step 3300 | Loss 0.0645 | Accuracy 0.9777
+Epoch 19 | Step 3400 | Loss 0.0662 | Accuracy 0.9771
+Epoch 19 | Step 3500 | Loss 0.0678 | Accuracy 0.9764
+Epoch 19 | Step 3600 | Loss 0.0694 | Accuracy 0.9758
+Epoch 19 | Step 3700 | Loss 0.0710 | Accuracy 0.9751
+Epoch 19 | Step 3800 | Loss 0.0723 | Accuracy 0.9746
+Epoch 19 | Step 3900 | Loss 0.0739 | Accuracy 0.9739
+Epoch 19 | Step 4000 | Loss 0.0753 | Accuracy 0.9733
+Epoch 19 | Step 4100 | Loss 0.0767 | Accuracy 0.9727
+Epoch 19 | Step 4200 | Loss 0.0780 | Accuracy 0.9721
+Epoch 19 | Step 4300 | Loss 0.0793 | Accuracy 0.9716
+Epoch 19 | Step 4400 | Loss 0.0805 | Accuracy 0.9711
+Epoch 19 | Step 4500 | Loss 0.0817 | Accuracy 0.9706
+Epoch 19 | Step 4600 | Loss 0.0828 | Accuracy 0.9701
+Epoch 19 | Step 4700 | Loss 0.0839 | Accuracy 0.9696
+Epoch 19 | Step 4800 | Loss 0.0849 | Accuracy 0.9692
+Epoch 19 | Step 4900 | Loss 0.0859 | Accuracy 0.9688
+Epoch 19 | Step 5000 | Loss 0.0869 | Accuracy 0.9684
+Epoch 19 | Step 5100 | Loss 0.0878 | Accuracy 0.9680
+Epoch 19 | Step 5200 | Loss 0.0887 | Accuracy 0.9676
+Epoch 19 | Step 5300 | Loss 0.0895 | Accuracy 0.9672
+Epoch 19 | Step 5400 | Loss 0.0903 | Accuracy 0.9669
+Epoch 19 | Step 5500 | Loss 0.0910 | Accuracy 0.9666
+Epoch 19 | Step 5600 | Loss 0.0917 | Accuracy 0.9663
+Epoch 19 | Step 5700 | Loss 0.0923 | Accuracy 0.9661
+Epoch 19 | Step 5800 | Loss 0.0929 | Accuracy 0.9658
+Epoch 19 | Step 5900 | Loss 0.0935 | Accuracy 0.9655
+Epoch 19 | Step 6000 | Loss 0.0940 | Accuracy 0.9653
+Epoch 19 | Step 6100 | Loss 0.0946 | Accuracy 0.9651
+Epoch 19 | Step 6200 | Loss 0.0951 | Accuracy 0.9649
+Epoch 19 | Step 6300 | Loss 0.0956 | Accuracy 0.9647
+Epoch 19 | Step 6400 | Loss 0.0961 | Accuracy 0.9644
+Epoch 19 | Step 6500 | Loss 0.0965 | Accuracy 0.9643
+Epoch 19 | Step 6600 | Loss 0.0969 | Accuracy 0.9641
+Epoch 19 | Step 6700 | Loss 0.0973 | Accuracy 0.9639
+Epoch 19 | Step 6800 | Loss 0.0977 | Accuracy 0.9637
+Epoch 19 | Step 6900 | Loss 0.0981 | Accuracy 0.9636
+Epoch 19 | Step 7000 | Loss 0.0984 | Accuracy 0.9634
+Epoch 19 | Step 7100 | Loss 0.0988 | Accuracy 0.9633
+  0%|          | 0/7172 [45:05<?, ?it/s]
+EPOCH: 19, LOSS: 0.0990, ACC: 0.9633, VAL_LOSS: 0.0000, VAL_ACC: 0.0000
+==================== 2024-03-01 11:26:51 ====================
+  0%|          | 0/7172 [00:00<?, ?it/s]Epoch 20 | Step 0 | Loss 0.9549 | Accuracy 0.6912
+Epoch 20 | Step 100 | Loss 0.0272 | Accuracy 0.9916
+Epoch 20 | Step 200 | Loss 0.0178 | Accuracy 0.9946
+Epoch 20 | Step 300 | Loss 0.0158 | Accuracy 0.9952
+Epoch 20 | Step 400 | Loss 0.0157 | Accuracy 0.9952
+Epoch 20 | Step 500 | Loss 0.0160 | Accuracy 0.9951
+Epoch 20 | Step 600 | Loss 0.0168 | Accuracy 0.9948
+Epoch 20 | Step 700 | Loss 0.0173 | Accuracy 0.9946
+Epoch 20 | Step 800 | Loss 0.0185 | Accuracy 0.9942
+Epoch 20 | Step 900 | Loss 0.0198 | Accuracy 0.9938
+Epoch 20 | Step 1000 | Loss 0.0214 | Accuracy 0.9932
+Epoch 20 | Step 1100 | Loss 0.0230 | Accuracy 0.9927
+Epoch 20 | Step 1200 | Loss 0.0247 | Accuracy 0.9921
+Epoch 20 | Step 1300 | Loss 0.0262 | Accuracy 0.9916
+Epoch 20 | Step 1400 | Loss 0.0278 | Accuracy 0.9910
+Epoch 20 | Step 1500 | Loss 0.0300 | Accuracy 0.9903
+Epoch 20 | Step 1600 | Loss 0.0318 | Accuracy 0.9897
+Epoch 20 | Step 1700 | Loss 0.0335 | Accuracy 0.9891
+Epoch 20 | Step 1800 | Loss 0.0353 | Accuracy 0.9884
+Epoch 20 | Step 1900 | Loss 0.0372 | Accuracy 0.9878
+Epoch 20 | Step 2000 | Loss 0.0390 | Accuracy 0.9872
+Epoch 20 | Step 2100 | Loss 0.0407 | Accuracy 0.9865
+Epoch 20 | Step 2200 | Loss 0.0425 | Accuracy 0.9859
+Epoch 20 | Step 2300 | Loss 0.0445 | Accuracy 0.9852
+Epoch 20 | Step 2400 | Loss 0.0465 | Accuracy 0.9845
+Epoch 20 | Step 2500 | Loss 0.0486 | Accuracy 0.9837
+Epoch 20 | Step 2600 | Loss 0.0505 | Accuracy 0.9830
+Epoch 20 | Step 2700 | Loss 0.0526 | Accuracy 0.9822
+Epoch 20 | Step 2800 | Loss 0.0546 | Accuracy 0.9815
+Epoch 20 | Step 2900 | Loss 0.0565 | Accuracy 0.9808
+Epoch 20 | Step 3000 | Loss 0.0584 | Accuracy 0.9801
+Epoch 20 | Step 3100 | Loss 0.0603 | Accuracy 0.9793
+Epoch 20 | Step 3200 | Loss 0.0621 | Accuracy 0.9786
+Epoch 20 | Step 3300 | Loss 0.0639 | Accuracy 0.9779
+Epoch 20 | Step 3400 | Loss 0.0657 | Accuracy 0.9772
+Epoch 20 | Step 3500 | Loss 0.0672 | Accuracy 0.9766
+Epoch 20 | Step 3600 | Loss 0.0689 | Accuracy 0.9759
+Epoch 20 | Step 3700 | Loss 0.0705 | Accuracy 0.9752
+Epoch 20 | Step 3800 | Loss 0.0719 | Accuracy 0.9746
+Epoch 20 | Step 3900 | Loss 0.0735 | Accuracy 0.9740
+Epoch 20 | Step 4000 | Loss 0.0748 | Accuracy 0.9734
+Epoch 20 | Step 4100 | Loss 0.0762 | Accuracy 0.9728
+Epoch 20 | Step 4200 | Loss 0.0776 | Accuracy 0.9722
+Epoch 20 | Step 4300 | Loss 0.0789 | Accuracy 0.9717
+Epoch 20 | Step 4400 | Loss 0.0800 | Accuracy 0.9712
+Epoch 20 | Step 4500 | Loss 0.0812 | Accuracy 0.9707
+Epoch 20 | Step 4600 | Loss 0.0822 | Accuracy 0.9703
+Epoch 20 | Step 4700 | Loss 0.0832 | Accuracy 0.9698
+Epoch 20 | Step 4800 | Loss 0.0842 | Accuracy 0.9694
+Epoch 20 | Step 4900 | Loss 0.0852 | Accuracy 0.9690
+Epoch 20 | Step 5000 | Loss 0.0862 | Accuracy 0.9686
+Epoch 20 | Step 5100 | Loss 0.0870 | Accuracy 0.9682
+Epoch 20 | Step 5200 | Loss 0.0879 | Accuracy 0.9679
+Epoch 20 | Step 5300 | Loss 0.0887 | Accuracy 0.9675
+Epoch 20 | Step 5400 | Loss 0.0894 | Accuracy 0.9672
+Epoch 20 | Step 5500 | Loss 0.0901 | Accuracy 0.9669
+Epoch 20 | Step 5600 | Loss 0.0908 | Accuracy 0.9666
+Epoch 20 | Step 5700 | Loss 0.0914 | Accuracy 0.9663
+Epoch 20 | Step 5800 | Loss 0.0920 | Accuracy 0.9661
+Epoch 20 | Step 5900 | Loss 0.0926 | Accuracy 0.9659
+Epoch 20 | Step 6000 | Loss 0.0931 | Accuracy 0.9656
+Epoch 20 | Step 6100 | Loss 0.0936 | Accuracy 0.9654
+Epoch 20 | Step 6200 | Loss 0.0941 | Accuracy 0.9652
+Epoch 20 | Step 6300 | Loss 0.0945 | Accuracy 0.9650
+Epoch 20 | Step 6400 | Loss 0.0950 | Accuracy 0.9648
+Epoch 20 | Step 6500 | Loss 0.0954 | Accuracy 0.9646
+Epoch 20 | Step 6600 | Loss 0.0958 | Accuracy 0.9645
+Epoch 20 | Step 6700 | Loss 0.0962 | Accuracy 0.9643
+Epoch 20 | Step 6800 | Loss 0.0965 | Accuracy 0.9641
+Epoch 20 | Step 6900 | Loss 0.0969 | Accuracy 0.9640
+Epoch 20 | Step 7000 | Loss 0.0972 | Accuracy 0.9639
+Epoch 20 | Step 7100 | Loss 0.0975 | Accuracy 0.9637
+  0%|          | 0/7172 [43:01<?, ?it/s]
+  0%|          | 0/147 [00:00<?, ?it/s]  0%|          | 0/147 [14:06<?, ?it/s]
+EPOCH: 20, LOSS: 0.0978, ACC: 0.9638, VAL_LOSS: 6.0489, VAL_ACC: 0.1458
+==================== 2024-03-01 12:23:58 ====================
+Finishing training...
+Training completed in 944m 47.906709s

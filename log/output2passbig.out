@@ -1,0 +1,39 @@
+nohup: ignoring input
+Model parameters:  29557828
+==================== 2024-02-27 20:46:12 ====================
+  0%|          | 0/1367 [00:00<?, ?it/s]Epoch 1 | Step 0 | Loss 4.2774 | Accuracy 0.0223
+Epoch 1 | Step 100 | Loss 0.4210 | Accuracy 0.9106
+Epoch 1 | Step 200 | Loss 0.2138 | Accuracy 0.9550
+Epoch 1 | Step 300 | Loss 0.1434 | Accuracy 0.9699
+Epoch 1 | Step 400 | Loss 0.1078 | Accuracy 0.9774
+Epoch 1 | Step 500 | Loss 0.0863 | Accuracy 0.9819
+Epoch 1 | Step 600 | Loss 0.0720 | Accuracy 0.9849
+Epoch 1 | Step 700 | Loss 0.0618 | Accuracy 0.9871
+Epoch 1 | Step 800 | Loss 0.0541 | Accuracy 0.9887
+Epoch 1 | Step 900 | Loss 0.0481 | Accuracy 0.9899
+Epoch 1 | Step 1000 | Loss 0.0433 | Accuracy 0.9909
+Epoch 1 | Step 1100 | Loss 0.0394 | Accuracy 0.9918
+Epoch 1 | Step 1200 | Loss 0.0361 | Accuracy 0.9924
+Epoch 1 | Step 1300 | Loss 0.0333 | Accuracy 0.9930
+EPOCH: 1, LOSS: 0.0317, ACC: 0.9941, VAL_LOSS: 15.2617, VAL_ACC: 0.1635
+==================== 2024-02-27 20:57:37 ====================
+  0%|          | 0/1367 [11:24<?, ?it/s]
+  0%|          | 0/1367 [00:00<?, ?it/s]Epoch 2 | Step 0 | Loss 0.0000 | Accuracy 1.0000
+Epoch 2 | Step 100 | Loss 0.0000 | Accuracy 1.0000
+Epoch 2 | Step 200 | Loss 0.0000 | Accuracy 1.0000
+Epoch 2 | Step 300 | Loss 0.0002 | Accuracy 1.0000
+Epoch 2 | Step 400 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 500 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 600 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 700 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 800 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 900 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 1000 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 1100 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 1200 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 1300 | Loss 0.0001 | Accuracy 1.0000
+EPOCH: 2, LOSS: 0.0001, ACC: 1.0007, VAL_LOSS: 17.8203, VAL_ACC: 0.1636
+==================== 2024-02-27 21:09:00 ====================
+  0%|          | 0/1367 [11:23<?, ?it/s]
+Finishing training...
+Training completed in 22m 48.971549s

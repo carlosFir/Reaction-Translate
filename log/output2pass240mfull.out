@@ -1,0 +1,62 @@
+nohup: ignoring input
+Preprocessing....
+Model parameters:  242820679
+Training....
+[model]
+num_layers = 7
+num_heads = 8
+d_model = 1536
+dff = 1024
+pe_input = 120
+pe_target = 120
+rate = 0.1
+
+[data]
+max_length = 100
+batch_size = 128
+
+[train]
+epochs = 1
+save_dir = /home/Zhouyu/MODEL/translate/save
+save_name = /test2passbig240mfull.tar
+print_trainstep_every = 1000
+teacher_forcing_ratio = 0.2
+
+
+[optimizer]
+lr = 0.0001
+beta1 = 0.9
+beta2 = 0.98
+eps = 1e-9
+
+[generate]
+on = False
+ckpt = /home/Zhouyu/MODEL/translate/save/test2passbig240m.tar
+==================== 2024-02-28 12:55:53 ====================
+
+  0%|          | 0/20492 [00:00<?, ?it/s]Epoch 1 | Step 0 | Loss 4.5851 | Accuracy 0.0038
+Epoch 1 | Step 1000 | Loss 0.3296 | Accuracy 0.9080
+Epoch 1 | Step 2000 | Loss 0.1664 | Accuracy 0.9539
+Epoch 1 | Step 3000 | Loss 0.1138 | Accuracy 0.9690
+Epoch 1 | Step 4000 | Loss 0.0890 | Accuracy 0.9765
+Epoch 1 | Step 5000 | Loss 0.0752 | Accuracy 0.9809
+Epoch 1 | Step 6000 | Loss 0.0628 | Accuracy 0.9840
+Epoch 1 | Step 7000 | Loss 0.0575 | Accuracy 0.9858
+Epoch 1 | Step 8000 | Loss 0.0511 | Accuracy 0.9876
+Epoch 1 | Step 9000 | Loss 0.0460 | Accuracy 0.9889
+Epoch 1 | Step 10000 | Loss 0.0414 | Accuracy 0.9900
+Epoch 1 | Step 11000 | Loss 0.0380 | Accuracy 0.9909
+Epoch 1 | Step 12000 | Loss 0.0353 | Accuracy 0.9916
+Epoch 1 | Step 13000 | Loss 0.0327 | Accuracy 0.9922
+Epoch 1 | Step 14000 | Loss 0.0305 | Accuracy 0.9928
+Epoch 1 | Step 15000 | Loss 0.0286 | Accuracy 0.9933
+Epoch 1 | Step 16000 | Loss 0.0269 | Accuracy 0.9937
+Epoch 1 | Step 17000 | Loss 0.0255 | Accuracy 0.9940
+Epoch 1 | Step 18000 | Loss 0.0242 | Accuracy 0.9943
+Epoch 1 | Step 19000 | Loss 0.0231 | Accuracy 0.9946
+Epoch 1 | Step 20000 | Loss 0.0221 | Accuracy 0.9949
+EPOCH: 1, LOSS: 0.0216, ACC: 0.9951, VAL_LOSS: 16.3182, VAL_ACC: 0.1542
+==================== 2024-02-28 16:30:43 ====================
+  0%|          | 0/20492 [3:34:49<?, ?it/s]
+Finishing training...
+Training completed in 214m 55.931290s

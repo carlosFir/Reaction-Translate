@@ -1,0 +1,54 @@
+nohup: ignoring input
+Model parameters:  242806852
+[model]
+num_layers = 7
+num_heads = 8
+d_model = 1536
+dff = 1024
+pe_input = 120
+pe_target = 120
+rate = 0.1
+
+[data]
+max_length = 100
+batch_size = 128
+
+[train]
+epochs = 1
+save_dir = /home/Zhouyu/MODEL/translate/save
+save_name = /test2passbig240m.tar
+print_trainstep_every = 100
+teacher_forcing_ratio = 0.2
+
+
+[optimizer]
+lr = 0.0001
+beta1 = 0.9
+beta2 = 0.98
+eps = 1e-9
+
+[generate]
+on = False
+ckpt = /home/Zhouyu/MODEL/translate/save/test2passbig.tar
+==================== 2024-02-28 10:08:01 ====================
+
+  0%|          | 0/1367 [00:00<?, ?it/s]Epoch 1 | Step 0 | Loss 4.3316 | Accuracy 0.0176
+Epoch 1 | Step 100 | Loss 2.7377 | Accuracy 0.2207
+Epoch 1 | Step 200 | Loss 1.6257 | Accuracy 0.5406
+Epoch 1 | Step 300 | Loss 1.0858 | Accuracy 0.6932
+Epoch 1 | Step 400 | Loss 0.8151 | Accuracy 0.7697
+Epoch 1 | Step 500 | Loss 0.6525 | Accuracy 0.8157
+Epoch 1 | Step 600 | Loss 0.5439 | Accuracy 0.8463
+Epoch 1 | Step 700 | Loss 0.4663 | Accuracy 0.8682
+Epoch 1 | Step 800 | Loss 0.4081 | Accuracy 0.8847
+Epoch 1 | Step 900 | Loss 0.3634 | Accuracy 0.8974
+Epoch 1 | Step 1000 | Loss 0.3271 | Accuracy 0.9077
+Epoch 1 | Step 1100 | Loss 0.2974 | Accuracy 0.9161
+Epoch 1 | Step 1200 | Loss 0.2727 | Accuracy 0.9231
+Epoch 1 | Step 1300 | Loss 0.2555 | Accuracy 0.9286
+EPOCH: 1, LOSS: 0.2438, ACC: 0.9327, VAL_LOSS: 14.7473, VAL_ACC: 0.1641
+==================== 2024-02-28 10:21:55 ====================
+
+  0%|          | 0/1367 [13:53<?, ?it/s]
+Finishing training...
+Training completed in 13m 59.686496s

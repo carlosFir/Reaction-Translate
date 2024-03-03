@@ -1,0 +1,25 @@
+nohup: ignoring input
+Model parameters:  7959620
+==================== 2024-02-27 20:38:00 ====================
+  0%|          | 0/684 [00:00<?, ?it/s]Epoch 1 | Step 0 | Loss 4.3678 | Accuracy 0.0119
+Epoch 1 | Step 100 | Loss 0.5409 | Accuracy 0.9131
+Epoch 1 | Step 200 | Loss 0.2812 | Accuracy 0.9559
+Epoch 1 | Step 300 | Loss 0.1899 | Accuracy 0.9705
+Epoch 1 | Step 400 | Loss 0.1433 | Accuracy 0.9778
+Epoch 1 | Step 500 | Loss 0.1150 | Accuracy 0.9822
+Epoch 1 | Step 600 | Loss 0.0960 | Accuracy 0.9852
+EPOCH: 1, LOSS: 0.0845, ACC: 0.9884, VAL_LOSS: 10.8851, VAL_ACC: 0.1642
+==================== 2024-02-27 20:42:05 ====================
+  0%|          | 0/684 [04:05<?, ?it/s]
+  0%|          | 0/684 [00:00<?, ?it/s]Epoch 2 | Step 0 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 100 | Loss 0.0002 | Accuracy 1.0000
+Epoch 2 | Step 200 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 300 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 400 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 500 | Loss 0.0001 | Accuracy 1.0000
+Epoch 2 | Step 600 | Loss 0.0001 | Accuracy 1.0000
+EPOCH: 2, LOSS: 0.0001, ACC: 1.0015, VAL_LOSS: 14.3009, VAL_ACC: 0.1637
+==================== 2024-02-27 20:46:12 ====================
+  0%|          | 0/684 [04:07<?, ?it/s]
+Finishing training...
+Training completed in 8m 13.001819s
